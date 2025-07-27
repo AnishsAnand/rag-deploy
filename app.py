@@ -68,8 +68,6 @@ def ask():
 
     return jsonify({
         "answer": answer,
-        "confidence": round(confidence_score, 2),
-        "sentiment": sentiment
     })
 
 @app.route("/feedback", methods=["POST"])
