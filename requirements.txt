@@ -1,0 +1,25 @@
+
+langchain
+langchain-community
+langchain-ollama
+chromadb==1.0.15
+ollama
+openai
+scikit-learn
+nltk
+pydantic
+python-dotenv
+sqlite-utils
+
+
+fastapi
+uvicorn
+
+flask
+flask-cors
+
+email-validator
+
+# --- React frontend (handled by npm separately) ---
+# React + Tailwind handled via:
+# npm install react react-dom tailwindcss

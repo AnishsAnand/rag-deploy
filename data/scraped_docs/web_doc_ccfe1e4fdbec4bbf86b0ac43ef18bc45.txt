@@ -1,0 +1,7746 @@
+Specifications for Amazon EC2 compute optimized instances - Amazon EC2
+Specifications for Amazon EC2 compute optimized instances - Amazon EC2
+Documentation
+Amazon EC2
+Instance Types
+Instance families and instance types
+Instance family summary
+Performance specifications
+Network specifications
+Amazon EBS specifications
+Instance store specifications
+Security specifications
+Specifications for Amazon EC2 compute optimized instances
+Compute optimized instances are designed for compute intensive applications that benefit
+from high performance processors. These instances are ideal for batch processing workloads,
+media transcoding, high performance web servers, high performance computing (HPC), scientific
+modeling, dedicated gaming servers, ad server engines, and machine learning inference.
+For information on previous generation instance types of this category, such as C4 instances,
+see
+Specifications for Amazon EC2 previous generation instances
+.
+Contents
+Instance families and instance types
+Instance family summary
+Performance specifications
+Network specifications
+Amazon EBS specifications
+Instance store specifications
+Security specifications
+Pricing
+For pricing information, see
+Amazon EC2 On-Demand Pricing
+.
+Instance families and instance types
+Instance family
+Available instance types
+C5
+c5.large
+|
+c5.xlarge
+|
+c5.2xlarge
+|
+c5.4xlarge
+|
+c5.9xlarge
+|
+c5.12xlarge
+|
+c5.18xlarge
+|
+c5.24xlarge
+|
+c5.metal
+C5a
+c5a.large
+|
+c5a.xlarge
+|
+c5a.2xlarge
+|
+c5a.4xlarge
+|
+c5a.8xlarge
+|
+c5a.12xlarge
+|
+c5a.16xlarge
+|
+c5a.24xlarge
+C5ad
+c5ad.large
+|
+c5ad.xlarge
+|
+c5ad.2xlarge
+|
+c5ad.4xlarge
+|
+c5ad.8xlarge
+|
+c5ad.12xlarge
+|
+c5ad.16xlarge
+|
+c5ad.24xlarge
+C5d
+c5d.large
+|
+c5d.xlarge
+|
+c5d.2xlarge
+|
+c5d.4xlarge
+|
+c5d.9xlarge
+|
+c5d.12xlarge
+|
+c5d.18xlarge
+|
+c5d.24xlarge
+|
+c5d.metal
+C5n
+c5n.large
+|
+c5n.xlarge
+|
+c5n.2xlarge
+|
+c5n.4xlarge
+|
+c5n.9xlarge
+|
+c5n.18xlarge
+|
+c5n.metal
+C6a
+c6a.large
+|
+c6a.xlarge
+|
+c6a.2xlarge
+|
+c6a.4xlarge
+|
+c6a.8xlarge
+|
+c6a.12xlarge
+|
+c6a.16xlarge
+|
+c6a.24xlarge
+|
+c6a.32xlarge
+|
+c6a.48xlarge
+|
+c6a.metal
+C6g
+c6g.medium
+|
+c6g.large
+|
+c6g.xlarge
+|
+c6g.2xlarge
+|
+c6g.4xlarge
+|
+c6g.8xlarge
+|
+c6g.12xlarge
+|
+c6g.16xlarge
+|
+c6g.metal
+C6gd
+c6gd.medium
+|
+c6gd.large
+|
+c6gd.xlarge
+|
+c6gd.2xlarge
+|
+c6gd.4xlarge
+|
+c6gd.8xlarge
+|
+c6gd.12xlarge
+|
+c6gd.16xlarge
+|
+c6gd.metal
+C6gn
+c6gn.medium
+|
+c6gn.large
+|
+c6gn.xlarge
+|
+c6gn.2xlarge
+|
+c6gn.4xlarge
+|
+c6gn.8xlarge
+|
+c6gn.12xlarge
+|
+c6gn.16xlarge
+C6i
+c6i.large
+|
+c6i.xlarge
+|
+c6i.2xlarge
+|
+c6i.4xlarge
+|
+c6i.8xlarge
+|
+c6i.12xlarge
+|
+c6i.16xlarge
+|
+c6i.24xlarge
+|
+c6i.32xlarge
+|
+c6i.metal
+C6id
+c6id.large
+|
+c6id.xlarge
+|
+c6id.2xlarge
+|
+c6id.4xlarge
+|
+c6id.8xlarge
+|
+c6id.12xlarge
+|
+c6id.16xlarge
+|
+c6id.24xlarge
+|
+c6id.32xlarge
+|
+c6id.metal
+C6in
+c6in.large
+|
+c6in.xlarge
+|
+c6in.2xlarge
+|
+c6in.4xlarge
+|
+c6in.8xlarge
+|
+c6in.12xlarge
+|
+c6in.16xlarge
+|
+c6in.24xlarge
+|
+c6in.32xlarge
+|
+c6in.metal
+C7a
+c7a.medium
+|
+c7a.large
+|
+c7a.xlarge
+|
+c7a.2xlarge
+|
+c7a.4xlarge
+|
+c7a.8xlarge
+|
+c7a.12xlarge
+|
+c7a.16xlarge
+|
+c7a.24xlarge
+|
+c7a.32xlarge
+|
+c7a.48xlarge
+|
+c7a.metal-48xl
+C7g
+c7g.medium
+|
+c7g.large
+|
+c7g.xlarge
+|
+c7g.2xlarge
+|
+c7g.4xlarge
+|
+c7g.8xlarge
+|
+c7g.12xlarge
+|
+c7g.16xlarge
+|
+c7g.metal
+C7gd
+c7gd.medium
+|
+c7gd.large
+|
+c7gd.xlarge
+|
+c7gd.2xlarge
+|
+c7gd.4xlarge
+|
+c7gd.8xlarge
+|
+c7gd.12xlarge
+|
+c7gd.16xlarge
+|
+c7gd.metal
+C7gn
+c7gn.medium
+|
+c7gn.large
+|
+c7gn.xlarge
+|
+c7gn.2xlarge
+|
+c7gn.4xlarge
+|
+c7gn.8xlarge
+|
+c7gn.12xlarge
+|
+c7gn.16xlarge
+|
+c7gn.metal
+C7i
+c7i.large
+|
+c7i.xlarge
+|
+c7i.2xlarge
+|
+c7i.4xlarge
+|
+c7i.8xlarge
+|
+c7i.12xlarge
+|
+c7i.16xlarge
+|
+c7i.24xlarge
+|
+c7i.48xlarge
+|
+c7i.metal-24xl
+|
+c7i.metal-48xl
+C7i-flex
+c7i-flex.large
+|
+c7i-flex.xlarge
+|
+c7i-flex.2xlarge
+|
+c7i-flex.4xlarge
+|
+c7i-flex.8xlarge
+|
+c7i-flex.12xlarge
+|
+c7i-flex.16xlarge
+C8g
+c8g.medium
+|
+c8g.large
+|
+c8g.xlarge
+|
+c8g.2xlarge
+|
+c8g.4xlarge
+|
+c8g.8xlarge
+|
+c8g.12xlarge
+|
+c8g.16xlarge
+|
+c8g.24xlarge
+|
+c8g.48xlarge
+|
+c8g.metal-24xl
+|
+c8g.metal-48xl
+C8gd
+c8gd.medium
+|
+c8gd.large
+|
+c8gd.xlarge
+|
+c8gd.2xlarge
+|
+c8gd.4xlarge
+|
+c8gd.8xlarge
+|
+c8gd.12xlarge
+|
+c8gd.16xlarge
+|
+c8gd.24xlarge
+|
+c8gd.48xlarge
+|
+c8gd.metal-24xl
+|
+c8gd.metal-48xl
+C8gn
+c8gn.medium
+|
+c8gn.large
+|
+c8gn.xlarge
+|
+c8gn.2xlarge
+|
+c8gn.4xlarge
+|
+c8gn.8xlarge
+|
+c8gn.12xlarge
+|
+c8gn.16xlarge
+|
+c8gn.24xlarge
+|
+c8gn.48xlarge
+|
+c8gn.metal-24xl
+|
+c8gn.metal-48xl
+Instance family summary
+Instance family
+Hypervisor
+Processor type (architecture)
+Metal instances available
+Dedicated Hosts support
+Spot support
+Hibernation support
+Supported operating systems
+C5
+Nitro v2
+Intel (x86_64)
+â
+â
+â
+â
+Windows | Linux
+C5a
+Nitro v2
+AMD (x86_64)
+â
+â
+â
+â
+Windows | Linux
+C5ad
+Nitro v2
+AMD (x86_64)
+â
+â
+â
+â
+Windows | Linux
+C5d
+Nitro v2
+Intel (x86_64)
+â
+â
+â
+â
+Windows | Linux
+C5n
+Nitro v3
+Intel (x86_64)
+â
+â
+â
+â
+Windows | Linux
+C6a
+Nitro v4
+AMD (x86_64)
+â
+â
+â
+â
+Windows | Linux
+C6g
+Nitro v2
+AWS Graviton (arm64)
+â
+â
+â
+â
+Linux
+C6gd
+Nitro v2
+AWS Graviton (arm64)
+â
+â
+â
+â
+Linux
+C6gn
+Nitro v4
+AWS Graviton (arm64)
+â
+â
+â
+â
+Linux
+C6i
+Nitro v4
+Intel (x86_64)
+â
+â
+â
+â
+Windows | Linux
+C6id
+Nitro v4
+Intel (x86_64)
+â
+â
+â
+â
+Windows | Linux
+C6in
+Nitro v4
+Intel (x86_64)
+â
+â
+â
+â
+Windows | Linux
+C7a
+Nitro v4
+AMD (x86_64)
+â
+â
+â
+â
+Windows | Linux
+C7g
+Nitro v4
+AWS Graviton (arm64)
+â
+â
+â
+â
+Linux
+C7gd
+Nitro v4
+AWS Graviton (arm64)
+â
+â
+â
+â
+Linux
+C7gn
+Nitro v5
+AWS Graviton (arm64)
+â
+â
+â
+â
+Linux
+C7i
+Nitro v4
+Intel (x86_64)
+â
+â
+â
+â
+Windows | Linux
+C7i-flex
+Nitro v4
+Intel (x86_64)
+â
+â
+â
+â
+Windows | Linux
+C8g
+Nitro v5
+AWS Graviton (arm64)
+â
+â
+â
+â
+Linux
+C8gd
+Nitro v5
+AWS Graviton (arm64)
+â
+â
+â
+â
+Linux
+C8gn
+Nitro v6
+AWS Graviton (arm64)
+â
+â
+â
+â
+Linux
+Performance specifications
+Instance type
+Memory (GiB)
+Processor
+vCPUs
+CPU cores
+Threads per core
+Accelerators
+Accelerator memory
+C5
+c5.large
+4.00
+Intel Xeon Platinum 8124M
+2
+1
+2
+â
+â
+c5.xlarge
+8.00
+Intel Xeon Platinum 8124M
+4
+2
+2
+â
+â
+c5.2xlarge
+16.00
+Intel Xeon Platinum 8124M
+8
+4
+2
+â
+â
+c5.4xlarge
+32.00
+Intel Xeon Platinum 8124M
+16
+8
+2
+â
+â
+c5.9xlarge
+72.00
+Intel Xeon Platinum 8124M
+36
+18
+2
+â
+â
+c5.12xlarge
+96.00
+2nd Gen Intel Xeon Platinum 8275CL
+48
+24
+2
+â
+â
+c5.18xlarge
+144.00
+Intel Xeon Platinum 8124M
+72
+36
+2
+â
+â
+c5.24xlarge
+192.00
+2nd Gen Intel Xeon Platinum 8275CL
+96
+48
+2
+â
+â
+c5.metal
+192.00
+2nd Gen Intel Xeon Platinum 8275CL
+96
+48
+2
+â
+â
+C5a
+c5a.large
+4.00
+2nd Gen AMD EPYC 7R32
+2
+1
+2
+â
+â
+c5a.xlarge
+8.00
+2nd Gen AMD EPYC 7R32
+4
+2
+2
+â
+â
+c5a.2xlarge
+16.00
+2nd Gen AMD EPYC 7R32
+8
+4
+2
+â
+â
+c5a.4xlarge
+32.00
+2nd Gen AMD EPYC 7R32
+16
+8
+2
+â
+â
+c5a.8xlarge
+64.00
+2nd Gen AMD EPYC 7R32
+32
+16
+2
+â
+â
+c5a.12xlarge
+96.00
+2nd Gen AMD EPYC 7R32
+48
+24
+2
+â
+â
+c5a.16xlarge
+128.00
+2nd Gen AMD EPYC 7R32
+64
+32
+2
+â
+â
+c5a.24xlarge
+192.00
+2nd Gen AMD EPYC 7R32
+96
+48
+2
+â
+â
+C5ad
+c5ad.large
+4.00
+2nd Gen AMD EPYC 7R32
+2
+1
+2
+â
+â
+c5ad.xlarge
+8.00
+2nd Gen AMD EPYC 7R32
+4
+2
+2
+â
+â
+c5ad.2xlarge
+16.00
+2nd Gen AMD EPYC 7R32
+8
+4
+2
+â
+â
+c5ad.4xlarge
+32.00
+2nd Gen AMD EPYC 7R32
+16
+8
+2
+â
+â
+c5ad.8xlarge
+64.00
+2nd Gen AMD EPYC 7R32
+32
+16
+2
+â
+â
+c5ad.12xlarge
+96.00
+2nd Gen AMD EPYC 7R32
+48
+24
+2
+â
+â
+c5ad.16xlarge
+128.00
+2nd Gen AMD EPYC 7R32
+64
+32
+2
+â
+â
+c5ad.24xlarge
+192.00
+2nd Gen AMD EPYC 7R32
+96
+48
+2
+â
+â
+C5d
+c5d.large
+4.00
+Intel Xeon Platinum 8124M
+2
+1
+2
+â
+â
+c5d.xlarge
+8.00
+Intel Xeon Platinum 8124M
+4
+2
+2
+â
+â
+c5d.2xlarge
+16.00
+Intel Xeon Platinum 8124M
+8
+4
+2
+â
+â
+c5d.4xlarge
+32.00
+Intel Xeon Platinum 8124M
+16
+8
+2
+â
+â
+c5d.9xlarge
+72.00
+Intel Xeon Platinum 8124M
+36
+18
+2
+â
+â
+c5d.12xlarge
+96.00
+2nd Gen Intel Xeon Platinum 8275CL
+48
+24
+2
+â
+â
+c5d.18xlarge
+144.00
+Intel Xeon Platinum 8124M
+72
+36
+2
+â
+â
+c5d.24xlarge
+192.00
+2nd Gen Intel Xeon Platinum 8275CL
+96
+48
+2
+â
+â
+c5d.metal
+192.00
+2nd Gen Intel Xeon Platinum 8275CL
+96
+48
+2
+â
+â
+C5n
+c5n.large
+5.25
+Intel Xeon Platinum 8124M
+2
+1
+2
+â
+â
+c5n.xlarge
+10.50
+Intel Xeon Platinum 8124M
+4
+2
+2
+â
+â
+c5n.2xlarge
+21.00
+Intel Xeon Platinum 8124M
+8
+4
+2
+â
+â
+c5n.4xlarge
+42.00
+Intel Xeon Platinum 8124M
+16
+8
+2
+â
+â
+c5n.9xlarge
+96.00
+Intel Xeon Platinum 8124M
+36
+18
+2
+â
+â
+c5n.18xlarge
+192.00
+Intel Xeon Platinum 8124M
+72
+36
+2
+â
+â
+c5n.metal
+192.00
+Intel Xeon Platinum 8124M
+72
+36
+2
+â
+â
+C6a
+c6a.large
+4.00
+AMD EPYC 7R13
+2
+1
+2
+â
+â
+c6a.xlarge
+8.00
+AMD EPYC 7R13
+4
+2
+2
+â
+â
+c6a.2xlarge
+16.00
+AMD EPYC 7R13
+8
+4
+2
+â
+â
+c6a.4xlarge
+32.00
+AMD EPYC 7R13
+16
+8
+2
+â
+â
+c6a.8xlarge
+64.00
+AMD EPYC 7R13
+32
+16
+2
+â
+â
+c6a.12xlarge
+96.00
+AMD EPYC 7R13
+48
+24
+2
+â
+â
+c6a.16xlarge
+128.00
+AMD EPYC 7R13
+64
+32
+2
+â
+â
+c6a.24xlarge
+192.00
+AMD EPYC 7R13
+96
+48
+2
+â
+â
+c6a.32xlarge
+256.00
+AMD EPYC 7R13
+128
+64
+2
+â
+â
+c6a.48xlarge
+384.00
+AMD EPYC 7R13
+192
+96
+2
+â
+â
+c6a.metal
+384.00
+AMD EPYC 7R13
+192
+96
+2
+â
+â
+C6g
+c6g.medium
+2.00
+AWS Graviton2 Processor
+1
+1
+1
+â
+â
+c6g.large
+4.00
+AWS Graviton2 Processor
+2
+2
+1
+â
+â
+c6g.xlarge
+8.00
+AWS Graviton2 Processor
+4
+4
+1
+â
+â
+c6g.2xlarge
+16.00
+AWS Graviton2 Processor
+8
+8
+1
+â
+â
+c6g.4xlarge
+32.00
+AWS Graviton2 Processor
+16
+16
+1
+â
+â
+c6g.8xlarge
+64.00
+AWS Graviton2 Processor
+32
+32
+1
+â
+â
+c6g.12xlarge
+96.00
+AWS Graviton2 Processor
+48
+48
+1
+â
+â
+c6g.16xlarge
+128.00
+AWS Graviton2 Processor
+64
+64
+1
+â
+â
+c6g.metal
+128.00
+AWS Graviton2 Processor
+64
+64
+1
+â
+â
+C6gd
+c6gd.medium
+2.00
+AWS Graviton2 Processor
+1
+1
+1
+â
+â
+c6gd.large
+4.00
+AWS Graviton2 Processor
+2
+2
+1
+â
+â
+c6gd.xlarge
+8.00
+AWS Graviton2 Processor
+4
+4
+1
+â
+â
+c6gd.2xlarge
+16.00
+AWS Graviton2 Processor
+8
+8
+1
+â
+â
+c6gd.4xlarge
+32.00
+AWS Graviton2 Processor
+16
+16
+1
+â
+â
+c6gd.8xlarge
+64.00
+AWS Graviton2 Processor
+32
+32
+1
+â
+â
+c6gd.12xlarge
+96.00
+AWS Graviton2 Processor
+48
+48
+1
+â
+â
+c6gd.16xlarge
+128.00
+AWS Graviton2 Processor
+64
+64
+1
+â
+â
+c6gd.metal
+128.00
+AWS Graviton2 Processor
+64
+64
+1
+â
+â
+C6gn
+c6gn.medium
+2.00
+AWS Graviton2 Processor
+1
+1
+1
+â
+â
+c6gn.large
+4.00
+AWS Graviton2 Processor
+2
+2
+1
+â
+â
+c6gn.xlarge
+8.00
+AWS Graviton2 Processor
+4
+4
+1
+â
+â
+c6gn.2xlarge
+16.00
+AWS Graviton2 Processor
+8
+8
+1
+â
+â
+c6gn.4xlarge
+32.00
+AWS Graviton2 Processor
+16
+16
+1
+â
+â
+c6gn.8xlarge
+64.00
+AWS Graviton2 Processor
+32
+32
+1
+â
+â
+c6gn.12xlarge
+96.00
+AWS Graviton2 Processor
+48
+48
+1
+â
+â
+c6gn.16xlarge
+128.00
+AWS Graviton2 Processor
+64
+64
+1
+â
+â
+C6i
+c6i.large
+4.00
+Intel Xeon Ice Lake
+2
+1
+2
+â
+â
+c6i.xlarge
+8.00
+Intel Xeon Ice Lake
+4
+2
+2
+â
+â
+c6i.2xlarge
+16.00
+Intel Xeon Ice Lake
+8
+4
+2
+â
+â
+c6i.4xlarge
+32.00
+Intel Xeon Ice Lake
+16
+8
+2
+â
+â
+c6i.8xlarge
+64.00
+Intel Xeon Ice Lake
+32
+16
+2
+â
+â
+c6i.12xlarge
+96.00
+Intel Xeon Ice Lake
+48
+24
+2
+â
+â
+c6i.16xlarge
+128.00
+Intel Xeon Ice Lake
+64
+32
+2
+â
+â
+c6i.24xlarge
+192.00
+Intel Xeon Ice Lake
+96
+48
+2
+â
+â
+c6i.32xlarge
+256.00
+Intel Xeon Ice Lake
+128
+64
+2
+â
+â
+c6i.metal
+256.00
+Intel Xeon Ice Lake
+128
+64
+2
+â
+â
+C6id
+c6id.large
+4.00
+Intel Xeon Ice Lake
+2
+1
+2
+â
+â
+c6id.xlarge
+8.00
+Intel Xeon Ice Lake
+4
+2
+2
+â
+â
+c6id.2xlarge
+16.00
+Intel Xeon Ice Lake
+8
+4
+2
+â
+â
+c6id.4xlarge
+32.00
+Intel Xeon Ice Lake
+16
+8
+2
+â
+â
+c6id.8xlarge
+64.00
+Intel Xeon Ice Lake
+32
+16
+2
+â
+â
+c6id.12xlarge
+96.00
+Intel Xeon Ice Lake
+48
+24
+2
+â
+â
+c6id.16xlarge
+128.00
+Intel Xeon Ice Lake
+64
+32
+2
+â
+â
+c6id.24xlarge
+192.00
+Intel Xeon Ice Lake
+96
+48
+2
+â
+â
+c6id.32xlarge
+256.00
+Intel Xeon Ice Lake
+128
+64
+2
+â
+â
+c6id.metal
+256.00
+Intel Xeon Ice Lake
+128
+64
+2
+â
+â
+C6in
+c6in.large
+4.00
+Intel Xeon Ice Lake
+2
+1
+2
+â
+â
+c6in.xlarge
+8.00
+Intel Xeon Ice Lake
+4
+2
+2
+â
+â
+c6in.2xlarge
+16.00
+Intel Xeon Ice Lake
+8
+4
+2
+â
+â
+c6in.4xlarge
+32.00
+Intel Xeon Ice Lake
+16
+8
+2
+â
+â
+c6in.8xlarge
+64.00
+Intel Xeon Ice Lake
+32
+16
+2
+â
+â
+c6in.12xlarge
+96.00
+Intel Xeon Ice Lake
+48
+24
+2
+â
+â
+c6in.16xlarge
+128.00
+Intel Xeon Ice Lake
+64
+32
+2
+â
+â
+c6in.24xlarge
+192.00
+Intel Xeon Ice Lake
+96
+48
+2
+â
+â
+c6in.32xlarge
+256.00
+Intel Xeon Ice Lake
+128
+64
+2
+â
+â
+c6in.metal
+256.00
+Intel Xeon Ice Lake
+128
+64
+2
+â
+â
+C7a
+c7a.medium
+2.00
+AMD EPYC 9R14
+1
+1
+1
+â
+â
+c7a.large
+4.00
+AMD EPYC 9R14
+2
+2
+1
+â
+â
+c7a.xlarge
+8.00
+AMD EPYC 9R14
+4
+4
+1
+â
+â
+c7a.2xlarge
+16.00
+AMD EPYC 9R14
+8
+8
+1
+â
+â
+c7a.4xlarge
+32.00
+AMD EPYC 9R14
+16
+16
+1
+â
+â
+c7a.8xlarge
+64.00
+AMD EPYC 9R14
+32
+32
+1
+â
+â
+c7a.12xlarge
+96.00
+AMD EPYC 9R14
+48
+48
+1
+â
+â
+c7a.16xlarge
+128.00
+AMD EPYC 9R14
+64
+64
+1
+â
+â
+c7a.24xlarge
+192.00
+AMD EPYC 9R14
+96
+96
+1
+â
+â
+c7a.32xlarge
+256.00
+AMD EPYC 9R14
+128
+128
+1
+â
+â
+c7a.48xlarge
+384.00
+AMD EPYC 9R14
+192
+192
+1
+â
+â
+c7a.metal-48xl
+384.00
+AMD EPYC 9R14
+192
+192
+1
+â
+â
+C7g
+c7g.medium
+2.00
+AWS Graviton3 Processor
+1
+1
+1
+â
+â
+c7g.large
+4.00
+AWS Graviton3 Processor
+2
+2
+1
+â
+â
+c7g.xlarge
+8.00
+AWS Graviton3 Processor
+4
+4
+1
+â
+â
+c7g.2xlarge
+16.00
+AWS Graviton3 Processor
+8
+8
+1
+â
+â
+c7g.4xlarge
+32.00
+AWS Graviton3 Processor
+16
+16
+1
+â
+â
+c7g.8xlarge
+64.00
+AWS Graviton3 Processor
+32
+32
+1
+â
+â
+c7g.12xlarge
+96.00
+AWS Graviton3 Processor
+48
+48
+1
+â
+â
+c7g.16xlarge
+128.00
+AWS Graviton3 Processor
+64
+64
+1
+â
+â
+c7g.metal
+128.00
+AWS Graviton3 Processor
+64
+64
+1
+â
+â
+C7gd
+c7gd.medium
+2.00
+AWS Graviton3 Processor
+1
+1
+1
+â
+â
+c7gd.large
+4.00
+AWS Graviton3 Processor
+2
+2
+1
+â
+â
+c7gd.xlarge
+8.00
+AWS Graviton3 Processor
+4
+4
+1
+â
+â
+c7gd.2xlarge
+16.00
+AWS Graviton3 Processor
+8
+8
+1
+â
+â
+c7gd.4xlarge
+32.00
+AWS Graviton3 Processor
+16
+16
+1
+â
+â
+c7gd.8xlarge
+64.00
+AWS Graviton3 Processor
+32
+32
+1
+â
+â
+c7gd.12xlarge
+96.00
+AWS Graviton3 Processor
+48
+48
+1
+â
+â
+c7gd.16xlarge
+128.00
+AWS Graviton3 Processor
+64
+64
+1
+â
+â
+c7gd.metal
+128.00
+AWS Graviton3 Processor
+64
+64
+1
+â
+â
+C7gn
+c7gn.medium
+2.00
+AWS Graviton3E Processor
+1
+1
+1
+â
+â
+c7gn.large
+4.00
+AWS Graviton3E Processor
+2
+2
+1
+â
+â
+c7gn.xlarge
+8.00
+AWS Graviton3E Processor
+4
+4
+1
+â
+â
+c7gn.2xlarge
+16.00
+AWS Graviton3E Processor
+8
+8
+1
+â
+â
+c7gn.4xlarge
+32.00
+AWS Graviton3E Processor
+16
+16
+1
+â
+â
+c7gn.8xlarge
+64.00
+AWS Graviton3E Processor
+32
+32
+1
+â
+â
+c7gn.12xlarge
+96.00
+AWS Graviton3E Processor
+48
+48
+1
+â
+â
+c7gn.16xlarge
+128.00
+AWS Graviton3E Processor
+64
+64
+1
+â
+â
+c7gn.metal
+128.00
+AWS Graviton3E Processor
+64
+64
+1
+â
+â
+C7i
+c7i.large
+4.00
+Intel Xeon Sapphire Rapids
+2
+1
+2
+â
+â
+c7i.xlarge
+8.00
+Intel Xeon Sapphire Rapids
+4
+2
+2
+â
+â
+c7i.2xlarge
+16.00
+Intel Xeon Sapphire Rapids
+8
+4
+2
+â
+â
+c7i.4xlarge
+32.00
+Intel Xeon Sapphire Rapids
+16
+8
+2
+â
+â
+c7i.8xlarge
+64.00
+Intel Xeon Sapphire Rapids
+32
+16
+2
+â
+â
+c7i.12xlarge
+96.00
+Intel Xeon Sapphire Rapids
+48
+24
+2
+â
+â
+c7i.16xlarge
+128.00
+Intel Xeon Sapphire Rapids
+64
+32
+2
+â
+â
+c7i.24xlarge
+192.00
+Intel Xeon Sapphire Rapids
+96
+48
+2
+â
+â
+c7i.48xlarge
+384.00
+Intel Xeon Sapphire Rapids
+192
+96
+2
+â
+â
+c7i.metal-24xl
+192.00
+Intel Xeon Sapphire Rapids
+96
+48
+2
+â
+â
+c7i.metal-48xl
+384.00
+Intel Xeon Sapphire Rapids
+192
+96
+2
+â
+â
+C7i-flex
+c7i-flex.large
+4.00
+Intel Xeon Sapphire Rapids
+2
+1
+2
+â
+â
+c7i-flex.xlarge
+8.00
+Intel Xeon Sapphire Rapids
+4
+2
+2
+â
+â
+c7i-flex.2xlarge
+16.00
+Intel Xeon Sapphire Rapids
+8
+4
+2
+â
+â
+c7i-flex.4xlarge
+32.00
+Intel Xeon Sapphire Rapids
+16
+8
+2
+â
+â
+c7i-flex.8xlarge
+64.00
+Intel Xeon Sapphire Rapids
+32
+16
+2
+â
+â
+c7i-flex.12xlarge
+96.00
+Intel Xeon Sapphire Rapids
+48
+24
+2
+â
+â
+c7i-flex.16xlarge
+128.00
+Intel Xeon Sapphire Rapids
+64
+32
+2
+â
+â
+C8g
+c8g.medium
+2.00
+AWS Graviton4 Processor
+1
+1
+1
+â
+â
+c8g.large
+4.00
+AWS Graviton4 Processor
+2
+2
+1
+â
+â
+c8g.xlarge
+8.00
+AWS Graviton4 Processor
+4
+4
+1
+â
+â
+c8g.2xlarge
+16.00
+AWS Graviton4 Processor
+8
+8
+1
+â
+â
+c8g.4xlarge
+32.00
+AWS Graviton4 Processor
+16
+16
+1
+â
+â
+c8g.8xlarge
+64.00
+AWS Graviton4 Processor
+32
+32
+1
+â
+â
+c8g.12xlarge
+96.00
+AWS Graviton4 Processor
+48
+48
+1
+â
+â
+c8g.16xlarge
+128.00
+AWS Graviton4 Processor
+64
+64
+1
+â
+â
+c8g.24xlarge
+192.00
+AWS Graviton4 Processor
+96
+96
+1
+â
+â
+c8g.48xlarge
+384.00
+AWS Graviton4 Processor
+192
+192
+1
+â
+â
+c8g.metal-24xl
+192.00
+AWS Graviton4 Processor
+96
+96
+1
+â
+â
+c8g.metal-48xl
+384.00
+AWS Graviton4 Processor
+192
+192
+1
+â
+â
+C8gd
+c8gd.medium
+2.00
+AWS Graviton4 Processor
+1
+1
+1
+â
+â
+c8gd.large
+4.00
+AWS Graviton4 Processor
+2
+2
+1
+â
+â
+c8gd.xlarge
+8.00
+AWS Graviton4 Processor
+4
+4
+1
+â
+â
+c8gd.2xlarge
+16.00
+AWS Graviton4 Processor
+8
+8
+1
+â
+â
+c8gd.4xlarge
+32.00
+AWS Graviton4 Processor
+16
+16
+1
+â
+â
+c8gd.8xlarge
+64.00
+AWS Graviton4 Processor
+32
+32
+1
+â
+â
+c8gd.12xlarge
+96.00
+AWS Graviton4 Processor
+48
+48
+1
+â
+â
+c8gd.16xlarge
+128.00
+AWS Graviton4 Processor
+64
+64
+1
+â
+â
+c8gd.24xlarge
+192.00
+AWS Graviton4 Processor
+96
+96
+1
+â
+â
+c8gd.48xlarge
+384.00
+AWS Graviton4 Processor
+192
+192
+1
+â
+â
+c8gd.metal-24xl
+192.00
+AWS Graviton4 Processor
+96
+96
+1
+â
+â
+c8gd.metal-48xl
+384.00
+AWS Graviton4 Processor
+192
+192
+1
+â
+â
+C8gn
+c8gn.medium
+2.00
+AWS Graviton4 Processor
+1
+1
+1
+â
+â
+c8gn.large
+4.00
+AWS Graviton4 Processor
+2
+2
+1
+â
+â
+c8gn.xlarge
+8.00
+AWS Graviton4 Processor
+4
+4
+1
+â
+â
+c8gn.2xlarge
+16.00
+AWS Graviton4 Processor
+8
+8
+1
+â
+â
+c8gn.4xlarge
+32.00
+AWS Graviton4 Processor
+16
+16
+1
+â
+â
+c8gn.8xlarge
+64.00
+AWS Graviton4 Processor
+32
+32
+1
+â
+â
+c8gn.12xlarge
+96.00
+AWS Graviton4 Processor
+48
+48
+1
+â
+â
+c8gn.16xlarge
+128.00
+AWS Graviton4 Processor
+64
+64
+1
+â
+â
+c8gn.24xlarge
+192.00
+AWS Graviton4 Processor
+96
+96
+1
+â
+â
+c8gn.48xlarge
+384.00
+AWS Graviton4 Processor
+192
+192
+1
+â
+â
+c8gn.metal-24xl
+192.00
+AWS Graviton4 Processor
+96
+96
+1
+â
+â
+c8gn.metal-48xl
+384.00
+AWS Graviton4 Processor
+192
+192
+1
+â
+â
+Network specifications
+Note
+C8g, C8gd instance types support configurable bandwidth weightings.
+With these instance types, you can optimize an instance's bandwidth for either networking performance
+or Amazon EBS performance. The following table shows the default networking bandwidth performance for these
+instance types. For the supported configurable weightings, see
+Configurable bandwidth weighting preferences
+.
+Instance type
+Baseline / Burst bandwidth (Gbps)
+EFA
+ENA
+ENA Express
+Network cards
+Max. network interfaces
+IP addresses per interface
+IPv6
+C5
+c5.large
+1
+0.75 / 10.0
+â
+â
+â
+1
+3
+10
+â
+c5.xlarge
+1
+1.25 / 10.0
+â
+â
+â
+1
+4
+15
+â
+c5.2xlarge
+1
+2.5 / 10.0
+â
+â
+â
+1
+4
+15
+â
+c5.4xlarge
+1
+5.0 / 10.0
+â
+â
+â
+1
+8
+30
+â
+c5.9xlarge
+12 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c5.12xlarge
+12 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c5.18xlarge
+25 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c5.24xlarge
+25 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c5.metal
+25 Gigabit
+â
+â
+â
+1
+15
+50
+â
+C5a
+c5a.large
+1
+0.75 / 10.0
+â
+â
+â
+1
+3
+10
+â
+c5a.xlarge
+1
+1.25 / 10.0
+â
+â
+â
+1
+4
+15
+â
+c5a.2xlarge
+1
+2.5 / 10.0
+â
+â
+â
+1
+4
+15
+â
+c5a.4xlarge
+1
+5.0 / 10.0
+â
+â
+â
+1
+8
+30
+â
+c5a.8xlarge
+10 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c5a.12xlarge
+12 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c5a.16xlarge
+20 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c5a.24xlarge
+20 Gigabit
+â
+â
+â
+1
+15
+50
+â
+C5ad
+c5ad.large
+1
+0.75 / 10.0
+â
+â
+â
+1
+3
+10
+â
+c5ad.xlarge
+1
+1.25 / 10.0
+â
+â
+â
+1
+4
+15
+â
+c5ad.2xlarge
+1
+2.5 / 10.0
+â
+â
+â
+1
+4
+15
+â
+c5ad.4xlarge
+1
+5.0 / 10.0
+â
+â
+â
+1
+8
+30
+â
+c5ad.8xlarge
+10 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c5ad.12xlarge
+12 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c5ad.16xlarge
+20 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c5ad.24xlarge
+20 Gigabit
+â
+â
+â
+1
+15
+50
+â
+C5d
+c5d.large
+1
+0.75 / 10.0
+â
+â
+â
+1
+3
+10
+â
+c5d.xlarge
+1
+1.25 / 10.0
+â
+â
+â
+1
+4
+15
+â
+c5d.2xlarge
+1
+2.5 / 10.0
+â
+â
+â
+1
+4
+15
+â
+c5d.4xlarge
+1
+5.0 / 10.0
+â
+â
+â
+1
+8
+30
+â
+c5d.9xlarge
+12 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c5d.12xlarge
+12 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c5d.18xlarge
+25 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c5d.24xlarge
+25 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c5d.metal
+25 Gigabit
+â
+â
+â
+1
+15
+50
+â
+C5n
+c5n.large
+1
+3.0 / 25.0
+â
+â
+â
+1
+3
+10
+â
+c5n.xlarge
+1
+5.0 / 25.0
+â
+â
+â
+1
+4
+15
+â
+c5n.2xlarge
+1
+10.0 / 25.0
+â
+â
+â
+1
+4
+15
+â
+c5n.4xlarge
+1
+15.0 / 25.0
+â
+â
+â
+1
+8
+30
+â
+c5n.9xlarge
+50 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c5n.18xlarge
+100 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c5n.metal
+100 Gigabit
+â
+â
+â
+1
+15
+50
+â
+C6a
+c6a.large
+1
+0.781 / 12.5
+â
+â
+â
+1
+3
+10
+â
+c6a.xlarge
+1
+1.562 / 12.5
+â
+â
+â
+1
+4
+15
+â
+c6a.2xlarge
+1
+3.125 / 12.5
+â
+â
+â
+1
+4
+15
+â
+c6a.4xlarge
+1
+6.25 / 12.5
+â
+â
+â
+1
+8
+30
+â
+c6a.8xlarge
+12.5 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c6a.12xlarge
+18.75 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c6a.16xlarge
+25 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c6a.24xlarge
+37.5 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c6a.32xlarge
+50 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c6a.48xlarge
+50 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c6a.metal
+50 Gigabit
+â
+â
+â
+1
+15
+50
+â
+C6g
+c6g.medium
+1
+0.5 / 10.0
+â
+â
+â
+1
+2
+4
+â
+c6g.large
+1
+0.75 / 10.0
+â
+â
+â
+1
+3
+10
+â
+c6g.xlarge
+1
+1.25 / 10.0
+â
+â
+â
+1
+4
+15
+â
+c6g.2xlarge
+1
+2.5 / 10.0
+â
+â
+â
+1
+4
+15
+â
+c6g.4xlarge
+1
+5.0 / 10.0
+â
+â
+â
+1
+8
+30
+â
+c6g.8xlarge
+12 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c6g.12xlarge
+20 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c6g.16xlarge
+25 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c6g.metal
+25 Gigabit
+â
+â
+â
+1
+15
+50
+â
+C6gd
+c6gd.medium
+1
+0.5 / 10.0
+â
+â
+â
+1
+2
+4
+â
+c6gd.large
+1
+0.75 / 10.0
+â
+â
+â
+1
+3
+10
+â
+c6gd.xlarge
+1
+1.25 / 10.0
+â
+â
+â
+1
+4
+15
+â
+c6gd.2xlarge
+1
+2.5 / 10.0
+â
+â
+â
+1
+4
+15
+â
+c6gd.4xlarge
+1
+5.0 / 10.0
+â
+â
+â
+1
+8
+30
+â
+c6gd.8xlarge
+12 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c6gd.12xlarge
+20 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c6gd.16xlarge
+25 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c6gd.metal
+25 Gigabit
+â
+â
+â
+1
+15
+50
+â
+C6gn
+c6gn.medium
+1
+1.6 / 16.0
+â
+â
+â
+1
+2
+4
+â
+c6gn.large
+1
+3.0 / 25.0
+â
+â
+â
+1
+3
+10
+â
+c6gn.xlarge
+1
+6.3 / 25.0
+â
+â
+â
+1
+4
+15
+â
+c6gn.2xlarge
+1
+12.5 / 25.0
+â
+â
+â
+1
+4
+15
+â
+c6gn.4xlarge
+25 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c6gn.8xlarge
+50 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c6gn.12xlarge
+75 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c6gn.16xlarge
+100 Gigabit
+â
+â
+â
+1
+15
+50
+â
+C6i
+c6i.large
+1
+0.781 / 12.5
+â
+â
+â
+1
+3
+10
+â
+c6i.xlarge
+1
+1.562 / 12.5
+â
+â
+â
+1
+4
+15
+â
+c6i.2xlarge
+1
+3.125 / 12.5
+â
+â
+â
+1
+4
+15
+â
+c6i.4xlarge
+1
+6.25 / 12.5
+â
+â
+â
+1
+8
+30
+â
+c6i.8xlarge
+12.5 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c6i.12xlarge
+18.75 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c6i.16xlarge
+25 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c6i.24xlarge
+37.5 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c6i.32xlarge
+50 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c6i.metal
+50 Gigabit
+â
+â
+â
+1
+15
+50
+â
+C6id
+c6id.large
+1
+0.781 / 12.5
+â
+â
+â
+1
+3
+10
+â
+c6id.xlarge
+1
+1.562 / 12.5
+â
+â
+â
+1
+4
+15
+â
+c6id.2xlarge
+1
+3.125 / 12.5
+â
+â
+â
+1
+4
+15
+â
+c6id.4xlarge
+1
+6.25 / 12.5
+â
+â
+â
+1
+8
+30
+â
+c6id.8xlarge
+12.5 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c6id.12xlarge
+18.75 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c6id.16xlarge
+25 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c6id.24xlarge
+37.5 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c6id.32xlarge
+50 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c6id.metal
+50 Gigabit
+â
+â
+â
+1
+15
+50
+â
+C6in
+c6in.large
+1
+3.125 / 25.0
+â
+â
+â
+1
+3
+10
+â
+c6in.xlarge
+1
+6.25 / 30.0
+â
+â
+â
+1
+4
+15
+â
+c6in.2xlarge
+1
+12.5 / 40.0
+â
+â
+â
+1
+4
+15
+â
+c6in.4xlarge
+1
+25.0 / 50.0
+â
+â
+â
+1
+8
+30
+â
+c6in.8xlarge
+50 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c6in.12xlarge
+75 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c6in.16xlarge
+100 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c6in.24xlarge
+150 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c6in.32xlarge
+200 Gigabit
+â
+â
+â
+2
+16
+50
+â
+c6in.metal
+200 Gigabit
+â
+â
+â
+2
+16
+50
+â
+C7a
+c7a.medium
+1
+0.39 / 12.5
+â
+â
+â
+1
+2
+4
+â
+c7a.large
+1
+0.781 / 12.5
+â
+â
+â
+1
+3
+10
+â
+c7a.xlarge
+1
+1.562 / 12.5
+â
+â
+â
+1
+4
+15
+â
+c7a.2xlarge
+1
+3.125 / 12.5
+â
+â
+â
+1
+4
+15
+â
+c7a.4xlarge
+1
+6.25 / 12.5
+â
+â
+â
+1
+8
+30
+â
+c7a.8xlarge
+12.5 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c7a.12xlarge
+18.75 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c7a.16xlarge
+25 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c7a.24xlarge
+37.5 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c7a.32xlarge
+50 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c7a.48xlarge
+50 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c7a.metal-48xl
+50 Gigabit
+â
+â
+â
+1
+15
+50
+â
+C7g
+c7g.medium
+1
+0.52 / 12.5
+â
+â
+â
+1
+2
+4
+â
+c7g.large
+1
+0.937 / 12.5
+â
+â
+â
+1
+3
+10
+â
+c7g.xlarge
+1
+1.876 / 12.5
+â
+â
+â
+1
+4
+15
+â
+c7g.2xlarge
+1
+3.75 / 15.0
+â
+â
+â
+1
+4
+15
+â
+c7g.4xlarge
+1
+7.5 / 15.0
+â
+â
+â
+1
+8
+30
+â
+c7g.8xlarge
+15 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c7g.12xlarge
+22.5 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c7g.16xlarge
+30 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c7g.metal
+30 Gigabit
+â
+â
+â
+1
+15
+50
+â
+C7gd
+c7gd.medium
+1
+0.52 / 12.5
+â
+â
+â
+1
+2
+4
+â
+c7gd.large
+1
+0.937 / 12.5
+â
+â
+â
+1
+3
+10
+â
+c7gd.xlarge
+1
+1.876 / 12.5
+â
+â
+â
+1
+4
+15
+â
+c7gd.2xlarge
+1
+3.75 / 15.0
+â
+â
+â
+1
+4
+15
+â
+c7gd.4xlarge
+1
+7.5 / 15.0
+â
+â
+â
+1
+8
+30
+â
+c7gd.8xlarge
+15 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c7gd.12xlarge
+22.5 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c7gd.16xlarge
+30 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c7gd.metal
+30 Gigabit
+â
+â
+â
+1
+15
+50
+â
+C7gn
+c7gn.medium
+1
+3.125 / 25.0
+â
+â
+â
+1
+2
+4
+â
+c7gn.large
+1
+6.25 / 30.0
+â
+â
+â
+1
+3
+10
+â
+c7gn.xlarge
+1
+12.5 / 40.0
+â
+â
+â
+1
+4
+15
+â
+c7gn.2xlarge
+1
+25.0 / 50.0
+â
+â
+â
+1
+4
+15
+â
+c7gn.4xlarge
+50 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c7gn.8xlarge
+100 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c7gn.12xlarge
+150 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c7gn.16xlarge
+200 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c7gn.metal
+200 Gigabit
+â
+â
+â
+1
+15
+50
+â
+C7i
+c7i.large
+1
+0.781 / 12.5
+â
+â
+â
+1
+3
+10
+â
+c7i.xlarge
+1
+1.562 / 12.5
+â
+â
+â
+1
+4
+15
+â
+c7i.2xlarge
+1
+3.125 / 12.5
+â
+â
+â
+1
+4
+15
+â
+c7i.4xlarge
+1
+6.25 / 12.5
+â
+â
+â
+1
+8
+30
+â
+c7i.8xlarge
+12.5 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c7i.12xlarge
+18.75 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c7i.16xlarge
+25 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c7i.24xlarge
+37.5 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c7i.48xlarge
+50 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c7i.metal-24xl
+37.5 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c7i.metal-48xl
+50 Gigabit
+â
+â
+â
+1
+15
+50
+â
+C7i-flex
+c7i-flex.large
+1
+0.39 / 12.5
+â
+â
+â
+1
+3
+10
+â
+c7i-flex.xlarge
+1
+0.781 / 12.5
+â
+â
+â
+1
+4
+15
+â
+c7i-flex.2xlarge
+1
+1.562 / 12.5
+â
+â
+â
+1
+4
+15
+â
+c7i-flex.4xlarge
+1
+3.125 / 12.5
+â
+â
+â
+1
+8
+30
+â
+c7i-flex.8xlarge
+1
+6.25 / 12.5
+â
+â
+â
+1
+8
+30
+â
+c7i-flex.12xlarge
+1
+9.375 / 18.75
+â
+â
+â
+1
+8
+30
+â
+c7i-flex.16xlarge
+1
+12.5 / 25.0
+â
+â
+â
+1
+15
+50
+â
+C8g
+c8g.medium
+1
+0.52 / 12.5
+â
+â
+â
+1
+2
+4
+â
+c8g.large
+1
+0.937 / 12.5
+â
+â
+â
+1
+3
+10
+â
+c8g.xlarge
+1
+1.875 / 12.5
+â
+â
+â
+1
+4
+15
+â
+c8g.2xlarge
+1
+3.75 / 15.0
+â
+â
+â
+1
+4
+15
+â
+c8g.4xlarge
+1
+7.5 / 15.0
+â
+â
+â
+1
+8
+30
+â
+c8g.8xlarge
+15 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c8g.12xlarge
+22.5 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c8g.16xlarge
+30 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c8g.24xlarge
+40 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c8g.48xlarge
+50 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c8g.metal-24xl
+40 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c8g.metal-48xl
+50 Gigabit
+â
+â
+â
+1
+15
+50
+â
+C8gd
+c8gd.medium
+1
+0.52 / 12.5
+â
+â
+â
+1
+2
+4
+â
+c8gd.large
+1
+0.937 / 12.5
+â
+â
+â
+1
+3
+10
+â
+c8gd.xlarge
+1
+1.875 / 12.5
+â
+â
+â
+1
+4
+15
+â
+c8gd.2xlarge
+1
+3.75 / 15.0
+â
+â
+â
+1
+4
+15
+â
+c8gd.4xlarge
+1
+7.5 / 15.0
+â
+â
+â
+1
+8
+30
+â
+c8gd.8xlarge
+15 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c8gd.12xlarge
+22.5 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c8gd.16xlarge
+30 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c8gd.24xlarge
+40 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c8gd.48xlarge
+50 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c8gd.metal-24xl
+40 Gigabit
+â
+â
+â
+1
+15
+50
+â
+c8gd.metal-48xl
+50 Gigabit
+â
+â
+â
+1
+15
+50
+â
+C8gn
+c8gn.medium
+1
+3.125 / 25.0
+â
+â
+â
+1
+2
+4
+â
+c8gn.large
+1
+6.25 / 30.0
+â
+â
+â
+1
+3
+10
+â
+c8gn.xlarge
+1
+12.5 / 40.0
+â
+â
+â
+1
+4
+15
+â
+c8gn.2xlarge
+1
+25.0 / 50.0
+â
+â
+â
+1
+4
+15
+â
+c8gn.4xlarge
+50 Gigabit
+â
+â
+â
+1
+8
+30
+â
+c8gn.8xlarge
+100 Gigabit
+â
+â
+â
+1
+10
+30
+â
+c8gn.12xlarge
+150 Gigabit
+â
+â
+â
+1
+12
+30
+â
+c8gn.16xlarge
+200 Gigabit
+â
+â
+â
+1
+16
+50
+â
+c8gn.24xlarge
+300 Gigabit
+â
+â
+â
+1
+24
+50
+â
+c8gn.48xlarge
+600 Gigabit
+â
+â
+â
+2
+24
+50
+â
+c8gn.metal-24xl
+300 Gigabit
+â
+â
+â
+1
+24
+50
+â
+c8gn.metal-48xl
+600 Gigabit
+â
+â
+â
+2
+24
+50
+â
+Note
+1
+These instances have a baseline bandwidth and can
+use a network I/O credit mechanism to burst beyond their baseline bandwidth on a best effort basis.
+Other instances types can sustain their maximum performance indefinitely. For more information,
+see
+instance network bandwidth
+.
+For
+c6in.32xlarge
+and
+c6in.metal
+, you must attach at least 2 ENIs, to separate network
+cards, to achieve 200 Gbps throughput. Each ENI attached to a network card can achieve up to 170 Gbps.
+For
+c8gn.48xlarge
+and
+c8gn.metal-48xl
+, you must attach at least 2 ENIs, to separate network
+cards, to achieve 600 Gbps throughput. Each ENI attached to a network card can achieve up to 300 Gbps.
+Amazon EBS specifications
+The following table indicates which instance types are Amazon EBS optimized by default and which
+optionally support it. It also describes their EBS-optimized performance, including dedicated bandwidth to Amazon EBS, the
+typical maximum aggregate throughput that can be achieved on that dedicated connection with a streaming read workload
+and 128 KiB I/O size, and the maximum IOPS the instance type can support when using a 16 KiB I/O size. Instance types
+not listed do not support Amazon EBS optimization.
+Important
+An instance's EBS performance is bounded by the instance's performance limits, or the
+aggregated performance of its attached volumes, whichever is smaller. To achieve maximum
+EBS performance, an instance must have attached volumes that provide a combined performance
+equal to or greater than the maximum instance performance. For example, to achieve
+80,000
+IOPS for
+r6i.16xlarge
+, the instance must have at least
+5
+gp3
+volumes provisioned with
+16,000
+IOPS each
+(
+5
+volumes x
+16,000
+IOPS =
+80,000
+IOPS).
+We recommend that you choose an EBSâoptimized instance type that provides more
+dedicated Amazon EBS throughput than your application needs; otherwise, the connection between
+Amazon EBS and Amazon EC2 can become a performance bottleneck.
+Note
+C8g, C8gd instance types support configurable bandwidth weightings.
+With these instance types, you can optimize an instance's bandwidth for either networking performance
+or Amazon EBS performance. The following table shows the default networking bandwidth performance for these
+instance types. For the supported configurable weightings, see
+Configurable bandwidth weighting preferences
+.
+Instance type
+Baseline / Maximum bandwidth (Mbps)
+Baseline / Maximum throughput (MB/s, 128 KiB I/O)
+Baseline / Maximum IOPS (16 KiB I/O)
+NVMe
+EBS volume limit
+C5
+c5.large
+1
+650.00 / 4750.00
+81.25 / 593.75
+4000.00 / 20000.00
+â
+Up to 27 (
+Shared limit
+)
+c5.xlarge
+1
+1150.00 / 4750.00
+143.75 / 593.75
+6000.00 / 20000.00
+â
+Up to 27 (
+Shared limit
+)
+c5.2xlarge
+1
+2300.00 / 4750.00
+287.50 / 593.75
+10000.00 / 20000.00
+â
+Up to 27 (
+Shared limit
+)
+c5.4xlarge
+4750.00
+593.75
+20000.00
+â
+Up to 27 (
+Shared limit
+)
+c5.9xlarge
+9500.00
+1187.50
+40000.00
+â
+Up to 27 (
+Shared limit
+)
+c5.12xlarge
+9500.00
+1187.50
+40000.00
+â
+Up to 27 (
+Shared limit
+)
+c5.18xlarge
+19000.00
+2375.00
+80000.00
+â
+Up to 27 (
+Shared limit
+)
+c5.24xlarge
+19000.00
+2375.00
+80000.00
+â
+Up to 27 (
+Shared limit
+)
+c5.metal
+19000.00
+2375.00
+80000.00
+â
+Up to 31 (
+Shared limit
+)
+C5a
+c5a.large
+1
+200.00 / 3170.00
+25.00 / 396.25
+800.00 / 13300.00
+â
+Up to 27 (
+Shared limit
+)
+c5a.xlarge
+1
+400.00 / 3170.00
+50.00 / 396.25
+1600.00 / 13300.00
+â
+Up to 27 (
+Shared limit
+)
+c5a.2xlarge
+1
+800.00 / 3170.00
+100.00 / 396.25
+3200.00 / 13300.00
+â
+Up to 27 (
+Shared limit
+)
+c5a.4xlarge
+1
+1580.00 / 3170.00
+197.50 / 396.25
+6600.00 / 13300.00
+â
+Up to 27 (
+Shared limit
+)
+c5a.8xlarge
+3170.00
+396.25
+13300.00
+â
+Up to 27 (
+Shared limit
+)
+c5a.12xlarge
+4750.00
+593.75
+20000.00
+â
+Up to 27 (
+Shared limit
+)
+c5a.16xlarge
+6300.00
+787.50
+26700.00
+â
+Up to 27 (
+Shared limit
+)
+c5a.24xlarge
+9500.00
+1187.50
+40000.00
+â
+Up to 27 (
+Shared limit
+)
+C5ad
+c5ad.large
+1
+200.00 / 3170.00
+25.00 / 396.25
+800.00 / 13300.00
+â
+Up to 26 (
+Shared limit
+)
+c5ad.xlarge
+1
+400.00 / 3170.00
+50.00 / 396.25
+1600.00 / 13300.00
+â
+Up to 26 (
+Shared limit
+)
+c5ad.2xlarge
+1
+800.00 / 3170.00
+100.00 / 396.25
+3200.00 / 13300.00
+â
+Up to 26 (
+Shared limit
+)
+c5ad.4xlarge
+1
+1580.00 / 3170.00
+197.50 / 396.25
+6600.00 / 13300.00
+â
+Up to 25 (
+Shared limit
+)
+c5ad.8xlarge
+3170.00
+396.25
+13300.00
+â
+Up to 25 (
+Shared limit
+)
+c5ad.12xlarge
+4750.00
+593.75
+20000.00
+â
+Up to 25 (
+Shared limit
+)
+c5ad.16xlarge
+6300.00
+787.50
+26700.00
+â
+Up to 25 (
+Shared limit
+)
+c5ad.24xlarge
+9500.00
+1187.50
+40000.00
+â
+Up to 25 (
+Shared limit
+)
+C5d
+c5d.large
+1
+650.00 / 4750.00
+81.25 / 593.75
+4000.00 / 20000.00
+â
+Up to 26 (
+Shared limit
+)
+c5d.xlarge
+1
+1150.00 / 4750.00
+143.75 / 593.75
+6000.00 / 20000.00
+â
+Up to 26 (
+Shared limit
+)
+c5d.2xlarge
+1
+2300.00 / 4750.00
+287.50 / 593.75
+10000.00 / 20000.00
+â
+Up to 26 (
+Shared limit
+)
+c5d.4xlarge
+4750.00
+593.75
+20000.00
+â
+Up to 26 (
+Shared limit
+)
+c5d.9xlarge
+9500.00
+1187.50
+40000.00
+â
+Up to 26 (
+Shared limit
+)
+c5d.12xlarge
+9500.00
+1187.50
+40000.00
+â
+Up to 25 (
+Shared limit
+)
+c5d.18xlarge
+19000.00
+2375.00
+80000.00
+â
+Up to 25 (
+Shared limit
+)
+c5d.24xlarge
+19000.00
+2375.00
+80000.00
+â
+Up to 23 (
+Shared limit
+)
+c5d.metal
+19000.00
+2375.00
+80000.00
+â
+Up to 31 (
+Shared limit
+)
+C5n
+c5n.large
+1
+650.00 / 4750.00
+81.25 / 593.75
+4000.00 / 20000.00
+â
+Up to 27 (
+Shared limit
+)
+c5n.xlarge
+1
+1150.00 / 4750.00
+143.75 / 593.75
+6000.00 / 20000.00
+â
+Up to 27 (
+Shared limit
+)
+c5n.2xlarge
+1
+2300.00 / 4750.00
+287.50 / 593.75
+10000.00 / 20000.00
+â
+Up to 27 (
+Shared limit
+)
+c5n.4xlarge
+4750.00
+593.75
+20000.00
+â
+Up to 27 (
+Shared limit
+)
+c5n.9xlarge
+9500.00
+1187.50
+40000.00
+â
+Up to 27 (
+Shared limit
+)
+c5n.18xlarge
+19000.00
+2375.00
+80000.00
+â
+Up to 27 (
+Shared limit
+)
+c5n.metal
+19000.00
+2375.00
+80000.00
+â
+Up to 31 (
+Shared limit
+)
+C6a
+c6a.large
+1
+650.00 / 10000.00
+81.25 / 1250.00
+3600.00 / 40000.00
+â
+Up to 27 (
+Shared limit
+)
+c6a.xlarge
+1
+1250.00 / 10000.00
+156.25 / 1250.00
+6000.00 / 40000.00
+â
+Up to 27 (
+Shared limit
+)
+c6a.2xlarge
+1
+2500.00 / 10000.00
+312.50 / 1250.00
+12000.00 / 40000.00
+â
+Up to 27 (
+Shared limit
+)
+c6a.4xlarge
+1
+5000.00 / 10000.00
+625.00 / 1250.00
+20000.00 / 40000.00
+â
+Up to 27 (
+Shared limit
+)
+c6a.8xlarge
+10000.00
+1250.00
+40000.00
+â
+Up to 27 (
+Shared limit
+)
+c6a.12xlarge
+15000.00
+1875.00
+60000.00
+â
+Up to 27 (
+Shared limit
+)
+c6a.16xlarge
+20000.00
+2500.00
+80000.00
+â
+Up to 27 (
+Shared limit
+)
+c6a.24xlarge
+30000.00
+3750.00
+120000.00
+â
+Up to 27 (
+Shared limit
+)
+c6a.32xlarge
+40000.00
+5000.00
+160000.00
+â
+Up to 27 (
+Shared limit
+)
+c6a.48xlarge
+40000.00
+5000.00
+240000.00
+â
+Up to 27 (
+Shared limit
+)
+c6a.metal
+40000.00
+5000.00
+240000.00
+â
+Up to 31 (
+Shared limit
+)
+C6g
+c6g.medium
+1
+315.00 / 4750.00
+39.38 / 593.75
+2500.00 / 20000.00
+â
+Up to 27 (
+Shared limit
+)
+c6g.large
+1
+630.00 / 4750.00
+78.75 / 593.75
+3600.00 / 20000.00
+â
+Up to 27 (
+Shared limit
+)
+c6g.xlarge
+1
+1188.00 / 4750.00
+148.50 / 593.75
+6000.00 / 20000.00
+â
+Up to 27 (
+Shared limit
+)
+c6g.2xlarge
+1
+2375.00 / 4750.00
+296.88 / 593.75
+12000.00 / 20000.00
+â
+Up to 27 (
+Shared limit
+)
+c6g.4xlarge
+4750.00
+593.75
+20000.00
+â
+Up to 27 (
+Shared limit
+)
+c6g.8xlarge
+9500.00
+1187.50
+40000.00
+â
+Up to 27 (
+Shared limit
+)
+c6g.12xlarge
+14250.00
+1781.25
+50000.00
+â
+Up to 27 (
+Shared limit
+)
+c6g.16xlarge
+19000.00
+2375.00
+80000.00
+â
+Up to 27 (
+Shared limit
+)
+c6g.metal
+19000.00
+2375.00
+80000.00
+â
+Up to 31 (
+Shared limit
+)
+C6gd
+c6gd.medium
+1
+315.00 / 4750.00
+39.38 / 593.75
+2500.00 / 20000.00
+â
+Up to 26 (
+Shared limit
+)
+c6gd.large
+1
+630.00 / 4750.00
+78.75 / 593.75
+3600.00 / 20000.00
+â
+Up to 26 (
+Shared limit
+)
+c6gd.xlarge
+1
+1188.00 / 4750.00
+148.50 / 593.75
+6000.00 / 20000.00
+â
+Up to 26 (
+Shared limit
+)
+c6gd.2xlarge
+1
+2375.00 / 4750.00
+296.88 / 593.75
+12000.00 / 20000.00
+â
+Up to 26 (
+Shared limit
+)
+c6gd.4xlarge
+4750.00
+593.75
+20000.00
+â
+Up to 26 (
+Shared limit
+)
+c6gd.8xlarge
+9500.00
+1187.50
+40000.00
+â
+Up to 26 (
+Shared limit
+)
+c6gd.12xlarge
+14250.00
+1781.25
+50000.00
+â
+Up to 25 (
+Shared limit
+)
+c6gd.16xlarge
+19000.00
+2375.00
+80000.00
+â
+Up to 25 (
+Shared limit
+)
+c6gd.metal
+19000.00
+2375.00
+80000.00
+â
+Up to 31 (
+Shared limit
+)
+C6gn
+c6gn.medium
+1
+760.00 / 9500.00
+95.00 / 1187.50
+2500.00 / 40000.00
+â
+Up to 27 (
+Shared limit
+)
+c6gn.large
+1
+1235.00 / 9500.00
+154.38 / 1187.50
+5000.00 / 40000.00
+â
+Up to 27 (
+Shared limit
+)
+c6gn.xlarge
+1
+2375.00 / 9500.00
+296.88 / 1187.50
+10000.00 / 40000.00
+â
+Up to 27 (
+Shared limit
+)
+c6gn.2xlarge
+1
+4750.00 / 9500.00
+593.75 / 1187.50
+20000.00 / 40000.00
+â
+Up to 27 (
+Shared limit
+)
+c6gn.4xlarge
+9500.00
+1187.50
+40000.00
+â
+Up to 27 (
+Shared limit
+)
+c6gn.8xlarge
+19000.00
+2375.00
+80000.00
+â
+Up to 27 (
+Shared limit
+)
+c6gn.12xlarge
+28500.00
+3562.50
+120000.00
+â
+Up to 27 (
+Shared limit
+)
+c6gn.16xlarge
+38000.00
+4750.00
+160000.00
+â
+Up to 27 (
+Shared limit
+)
+C6i
+c6i.large
+1
+650.00 / 10000.00
+81.25 / 1250.00
+3600.00 / 40000.00
+â
+Up to 27 (
+Shared limit
+)
+c6i.xlarge
+1
+1250.00 / 10000.00
+156.25 / 1250.00
+6000.00 / 40000.00
+â
+Up to 27 (
+Shared limit
+)
+c6i.2xlarge
+1
+2500.00 / 10000.00
+312.50 / 1250.00
+12000.00 / 40000.00
+â
+Up to 27 (
+Shared limit
+)
+c6i.4xlarge
+1
+5000.00 / 10000.00
+625.00 / 1250.00
+20000.00 / 40000.00
+â
+Up to 27 (
+Shared limit
+)
+c6i.8xlarge
+10000.00
+1250.00
+40000.00
+â
+Up to 27 (
+Shared limit
+)
+c6i.12xlarge
+15000.00
+1875.00
+60000.00
+â
+Up to 27 (
+Shared limit
+)
+c6i.16xlarge
+20000.00
+2500.00
+80000.00
+â
+Up to 27 (
+Shared limit
+)
+c6i.24xlarge
+30000.00
+3750.00
+120000.00
+â
+Up to 27 (
+Shared limit
+)
+c6i.32xlarge
+40000.00
+5000.00
+160000.00
+â
+Up to 27 (
+Shared limit
+)
+c6i.metal
+40000.00
+5000.00
+160000.00
+â
+Up to 31 (
+Shared limit
+)
+C6id
+c6id.large
+1
+650.00 / 10000.00
+81.25 / 1250.00
+3600.00 / 40000.00
+â
+Up to 26 (
+Shared limit
+)
+c6id.xlarge
+1
+1250.00 / 10000.00
+156.25 / 1250.00
+6000.00 / 40000.00
+â
+Up to 26 (
+Shared limit
+)
+c6id.2xlarge
+1
+2500.00 / 10000.00
+312.50 / 1250.00
+12000.00 / 40000.00
+â
+Up to 26 (
+Shared limit
+)
+c6id.4xlarge
+1
+5000.00 / 10000.00
+625.00 / 1250.00
+20000.00 / 40000.00
+â
+Up to 26 (
+Shared limit
+)
+c6id.8xlarge
+10000.00
+1250.00
+40000.00
+â
+Up to 26 (
+Shared limit
+)
+c6id.12xlarge
+15000.00
+1875.00
+60000.00
+â
+Up to 25 (
+Shared limit
+)
+c6id.16xlarge
+20000.00
+2500.00
+80000.00
+â
+Up to 25 (
+Shared limit
+)
+c6id.24xlarge
+30000.00
+3750.00
+120000.00
+â
+Up to 23 (
+Shared limit
+)
+c6id.32xlarge
+40000.00
+5000.00
+160000.00
+â
+Up to 23 (
+Shared limit
+)
+c6id.metal
+40000.00
+5000.00
+160000.00
+â
+Up to 31 (
+Shared limit
+)
+C6in
+c6in.large
+1
+1562.00 / 25000.00
+195.31 / 3125.00
+6250.00 / 100000.00
+â
+Up to 27 (
+Shared limit
+)
+c6in.xlarge
+1
+3125.00 / 25000.00
+390.62 / 3125.00
+12500.00 / 100000.00
+â
+Up to 27 (
+Shared limit
+)
+c6in.2xlarge
+1
+6250.00 / 25000.00
+781.25 / 3125.00
+25000.00 / 100000.00
+â
+Up to 27 (
+Shared limit
+)
+c6in.4xlarge
+1
+12500.00 / 25000.00
+1562.50 / 3125.00
+50000.00 / 100000.00
+â
+Up to 27 (
+Shared limit
+)
+c6in.8xlarge
+25000.00
+3125.00
+100000.00
+â
+Up to 27 (
+Shared limit
+)
+c6in.12xlarge
+37500.00
+4687.50
+150000.00
+â
+Up to 27 (
+Shared limit
+)
+c6in.16xlarge
+50000.00
+6250.00
+200000.00
+â
+Up to 27 (
+Shared limit
+)
+c6in.24xlarge
+75000.00
+9375.00
+300000.00
+â
+Up to 27 (
+Shared limit
+)
+c6in.32xlarge
+100000.00
+12500.00
+400000.00
+â
+Up to 27 (
+Shared limit
+)
+c6in.metal
+100000.00
+12500.00
+400000.00
+â
+Up to 31 (
+Shared limit
+)
+C7a
+c7a.medium
+1
+325.00 / 10000.00
+40.62 / 1250.00
+2500.00 / 40000.00
+â
+32 (
+Dedicated limit
+)
+c7a.large
+1
+650.00 / 10000.00
+81.25 / 1250.00
+3600.00 / 40000.00
+â
+32 (
+Dedicated limit
+)
+c7a.xlarge
+1
+1250.00 / 10000.00
+156.25 / 1250.00
+6000.00 / 40000.00
+â
+32 (
+Dedicated limit
+)
+c7a.2xlarge
+1
+2500.00 / 10000.00
+312.50 / 1250.00
+12000.00 / 40000.00
+â
+32 (
+Dedicated limit
+)
+c7a.4xlarge
+1
+5000.00 / 10000.00
+625.00 / 1250.00
+20000.00 / 40000.00
+â
+32 (
+Dedicated limit
+)
+c7a.8xlarge
+10000.00
+1250.00
+40000.00
+â
+32 (
+Dedicated limit
+)
+c7a.12xlarge
+15000.00
+1875.00
+60000.00
+â
+32 (
+Dedicated limit
+)
+c7a.16xlarge
+20000.00
+2500.00
+80000.00
+â
+48 (
+Dedicated limit
+)
+c7a.24xlarge
+30000.00
+3750.00
+120000.00
+â
+64 (
+Dedicated limit
+)
+c7a.32xlarge
+40000.00
+5000.00
+160000.00
+â
+88 (
+Dedicated limit
+)
+c7a.48xlarge
+40000.00
+5000.00
+240000.00
+â
+128 (
+Dedicated limit
+)
+c7a.metal-48xl
+40000.00
+5000.00
+240000.00
+â
+79 (
+Dedicated limit
+)
+C7g
+c7g.medium
+1
+315.00 / 10000.00
+39.38 / 1250.00
+2500.00 / 40000.00
+â
+Up to 27 (
+Shared limit
+)
+c7g.large
+1
+630.00 / 10000.00
+78.75 / 1250.00
+3600.00 / 40000.00
+â
+Up to 27 (
+Shared limit
+)
+c7g.xlarge
+1
+1250.00 / 10000.00
+156.25 / 1250.00
+6000.00 / 40000.00
+â
+Up to 27 (
+Shared limit
+)
+c7g.2xlarge
+1
+2500.00 / 10000.00
+312.50 / 1250.00
+12000.00 / 40000.00
+â
+Up to 27 (
+Shared limit
+)
+c7g.4xlarge
+1
+5000.00 / 10000.00
+625.00 / 1250.00
+20000.00 / 40000.00
+â
+Up to 27 (
+Shared limit
+)
+c7g.8xlarge
+10000.00
+1250.00
+40000.00
+â
+Up to 27 (
+Shared limit
+)
+c7g.12xlarge
+15000.00
+1875.00
+60000.00
+â
+Up to 27 (
+Shared limit
+)
+c7g.16xlarge
+20000.00
+2500.00
+80000.00
+â
+Up to 27 (
+Shared limit
+)
+c7g.metal
+20000.00
+2500.00
+80000.00
+â
+Up to 31 (
+Shared limit
+)
+C7gd
+c7gd.medium
+1
+315.00 / 10000.00
+39.38 / 1250.00
+2500.00 / 40000.00
+â
+Up to 26 (
+Shared limit
+)
+c7gd.large
+1
+630.00 / 10000.00
+78.75 / 1250.00
+3600.00 / 40000.00
+â
+Up to 26 (
+Shared limit
+)
+c7gd.xlarge
+1
+1250.00 / 10000.00
+156.25 / 1250.00
+6000.00 / 40000.00
+â
+Up to 26 (
+Shared limit
+)
+c7gd.2xlarge
+1
+2500.00 / 10000.00
+312.50 / 1250.00
+12000.00 / 40000.00
+â
+Up to 26 (
+Shared limit
+)
+c7gd.4xlarge
+1
+5000.00 / 10000.00
+625.00 / 1250.00
+20000.00 / 40000.00
+â
+Up to 26 (
+Shared limit
+)
+c7gd.8xlarge
+10000.00
+1250.00
+40000.00
+â
+Up to 26 (
+Shared limit
+)
+c7gd.12xlarge
+15000.00
+1875.00
+60000.00
+â
+Up to 25 (
+Shared limit
+)
+c7gd.16xlarge
+20000.00
+2500.00
+80000.00
+â
+Up to 25 (
+Shared limit
+)
+c7gd.metal
+20000.00
+2500.00
+80000.00
+â
+Up to 31 (
+Shared limit
+)
+C7gn
+c7gn.medium
+1
+521.00 / 10000.00
+65.12 / 1250.00
+2083.00 / 40000.00
+â
+Up to 27 (
+Shared limit
+)
+c7gn.large
+1
+1042.00 / 10000.00
+130.25 / 1250.00
+4167.00 / 40000.00
+â
+Up to 27 (
+Shared limit
+)
+c7gn.xlarge
+1
+2083.00 / 10000.00
+260.38 / 1250.00
+8333.00 / 40000.00
+â
+Up to 27 (
+Shared limit
+)
+c7gn.2xlarge
+1
+4167.00 / 10000.00
+520.88 / 1250.00
+16667.00 / 40000.00
+â
+Up to 27 (
+Shared limit
+)
+c7gn.4xlarge
+1
+8333.00 / 10000.00
+1041.62 / 1250.00
+33333.00 / 40000.00
+â
+Up to 27 (
+Shared limit
+)
+c7gn.8xlarge
+1
+16667.00 / 20000.00
+2083.38 / 2500.00
+66667.00 / 80000.00
+â
+Up to 27 (
+Shared limit
+)
+c7gn.12xlarge
+1
+25000.00 / 30000.00
+3125.00 / 3750.00
+100000.00 / 120000.00
+â
+Up to 27 (
+Shared limit
+)
+c7gn.16xlarge
+1
+33333.00 / 40000.00
+4166.62 / 5000.00
+133333.00 / 160000.00
+â
+Up to 27 (
+Shared limit
+)
+c7gn.metal
+1
+33333.00 / 40000.00
+4166.62 / 5000.00
+133333.00 / 160000.00
+â
+Up to 31 (
+Shared limit
+)
+C7i
+c7i.large
+1
+650.00 / 10000.00
+81.25 / 1250.00
+3600.00 / 40000.00
+â
+32 (
+Dedicated limit
+)
+c7i.xlarge
+1
+1250.00 / 10000.00
+156.25 / 1250.00
+6000.00 / 40000.00
+â
+32 (
+Dedicated limit
+)
+c7i.2xlarge
+1
+2500.00 / 10000.00
+312.50 / 1250.00
+12000.00 / 40000.00
+â
+32 (
+Dedicated limit
+)
+c7i.4xlarge
+1
+5000.00 / 10000.00
+625.00 / 1250.00
+20000.00 / 40000.00
+â
+32 (
+Dedicated limit
+)
+c7i.8xlarge
+10000.00
+1250.00
+40000.00
+â
+32 (
+Dedicated limit
+)
+c7i.12xlarge
+15000.00
+1875.00
+60000.00
+â
+32 (
+Dedicated limit
+)
+c7i.16xlarge
+20000.00
+2500.00
+80000.00
+â
+48 (
+Dedicated limit
+)
+c7i.24xlarge
+30000.00
+3750.00
+120000.00
+â
+64 (
+Dedicated limit
+)
+c7i.48xlarge
+40000.00
+5000.00
+240000.00
+â
+128 (
+Dedicated limit
+)
+c7i.metal-24xl
+30000.00
+3750.00
+120000.00
+â
+39 (
+Dedicated limit
+)
+c7i.metal-48xl
+40000.00
+5000.00
+240000.00
+â
+79 (
+Dedicated limit
+)
+C7i-flex
+c7i-flex.large
+1
+312.00 / 10000.00
+39.06 / 1250.00
+2500.00 / 40000.00
+â
+32 (
+Dedicated limit
+)
+c7i-flex.xlarge
+1
+625.00 / 10000.00
+78.12 / 1250.00
+3600.00 / 40000.00
+â
+32 (
+Dedicated limit
+)
+c7i-flex.2xlarge
+1
+1250.00 / 10000.00
+156.25 / 1250.00
+6000.00 / 40000.00
+â
+32 (
+Dedicated limit
+)
+c7i-flex.4xlarge
+1
+2500.00 / 10000.00
+312.50 / 1250.00
+12000.00 / 40000.00
+â
+32 (
+Dedicated limit
+)
+c7i-flex.8xlarge
+1
+5000.00 / 10000.00
+625.00 / 1250.00
+20000.00 / 40000.00
+â
+32 (
+Dedicated limit
+)
+c7i-flex.12xlarge
+1
+7500.00 / 15000.00
+937.50 / 1875.00
+30000.00 / 60000.00
+â
+32 (
+Dedicated limit
+)
+c7i-flex.16xlarge
+1
+10000.00 / 20000.00
+1250.00 / 2500.00
+40000.00 / 80000.00
+â
+48 (
+Dedicated limit
+)
+C8g
+c8g.medium
+1
+315.00 / 10000.00
+39.38 / 1250.00
+2500.00 / 40000.00
+â
+32 (
+Dedicated limit
+)
+c8g.large
+1
+630.00 / 10000.00
+78.75 / 1250.00
+3600.00 / 40000.00
+â
+32 (
+Dedicated limit
+)
+c8g.xlarge
+1
+1250.00 / 10000.00
+156.25 / 1250.00
+6000.00 / 40000.00
+â
+32 (
+Dedicated limit
+)
+c8g.2xlarge
+1
+2500.00 / 10000.00
+312.50 / 1250.00
+12000.00 / 40000.00
+â
+32 (
+Dedicated limit
+)
+c8g.4xlarge
+1
+5000.00 / 10000.00
+625.00 / 1250.00
+20000.00 / 40000.00
+â
+32 (
+Dedicated limit
+)
+c8g.8xlarge
+10000.00
+1250.00
+40000.00
+â
+32 (
+Dedicated limit
+)
+c8g.12xlarge
+15000.00
+1875.00
+60000.00
+â
+32 (
+Dedicated limit
+)
+c8g.16xlarge
+20000.00
+2500.00
+80000.00
+â
+48 (
+Dedicated limit
+)
+c8g.24xlarge
+30000.00
+3750.00
+120000.00
+â
+64 (
+Dedicated limit
+)
+c8g.48xlarge
+40000.00
+5000.00
+240000.00
+â
+128 (
+Dedicated limit
+)
+c8g.metal-24xl
+30000.00
+3750.00
+120000.00
+â
+39 (
+Dedicated limit
+)
+c8g.metal-48xl
+40000.00
+5000.00
+240000.00
+â
+79 (
+Dedicated limit
+)
+C8gd
+c8gd.medium
+1
+315.00 / 10000.00
+39.38 / 1250.00
+2500.00 / 40000.00
+â
+32 (
+Dedicated limit
+)
+c8gd.large
+1
+630.00 / 10000.00
+78.75 / 1250.00
+3600.00 / 40000.00
+â
+32 (
+Dedicated limit
+)
+c8gd.xlarge
+1
+1250.00 / 10000.00
+156.25 / 1250.00
+6000.00 / 40000.00
+â
+32 (
+Dedicated limit
+)
+c8gd.2xlarge
+1
+2500.00 / 10000.00
+312.50 / 1250.00
+12000.00 / 40000.00
+â
+32 (
+Dedicated limit
+)
+c8gd.4xlarge
+1
+5000.00 / 10000.00
+625.00 / 1250.00
+20000.00 / 40000.00
+â
+32 (
+Dedicated limit
+)
+c8gd.8xlarge
+10000.00
+1250.00
+40000.00
+â
+32 (
+Dedicated limit
+)
+c8gd.12xlarge
+15000.00
+1875.00
+60000.00
+â
+32 (
+Dedicated limit
+)
+c8gd.16xlarge
+20000.00
+2500.00
+80000.00
+â
+48 (
+Dedicated limit
+)
+c8gd.24xlarge
+30000.00
+3750.00
+120000.00
+â
+64 (
+Dedicated limit
+)
+c8gd.48xlarge
+40000.00
+5000.00
+240000.00
+â
+128 (
+Dedicated limit
+)
+c8gd.metal-24xl
+30000.00
+3750.00
+120000.00
+â
+39 (
+Dedicated limit
+)
+c8gd.metal-48xl
+40000.00
+5000.00
+240000.00
+â
+79 (
+Dedicated limit
+)
+C8gn
+c8gn.medium
+1
+760.00 / 10000.00
+95.00 / 1250.00
+2500.00 / 40000.00
+â
+32 (
+Dedicated limit
+)
+c8gn.large
+1
+1250.00 / 10000.00
+156.25 / 1250.00
+5000.00 / 40000.00
+â
+32 (
+Dedicated limit
+)
+c8gn.xlarge
+1
+2500.00 / 10000.00
+312.50 / 1250.00
+10000.00 / 40000.00
+â
+32 (
+Dedicated limit
+)
+c8gn.2xlarge
+1
+5000.00 / 10000.00
+625.00 / 1250.00
+20000.00 / 40000.00
+â
+32 (
+Dedicated limit
+)
+c8gn.4xlarge
+10000.00
+1250.00
+40000.00
+â
+32 (
+Dedicated limit
+)
+c8gn.8xlarge
+20000.00
+2500.00
+80000.00
+â
+32 (
+Dedicated limit
+)
+c8gn.12xlarge
+30000.00
+3750.00
+120000.00
+â
+32 (
+Dedicated limit
+)
+c8gn.16xlarge
+40000.00
+5000.00
+160000.00
+â
+48 (
+Dedicated limit
+)
+c8gn.24xlarge
+60000.00
+7500.00
+240000.00
+â
+64 (
+Dedicated limit
+)
+c8gn.48xlarge
+60000.00
+7500.00
+240000.00
+â
+64 (
+Dedicated limit
+)
+c8gn.metal-24xl
+60000.00
+7500.00
+240000.00
+â
+39 (
+Dedicated limit
+)
+c8gn.metal-48xl
+60000.00
+7500.00
+240000.00
+â
+39 (
+Dedicated limit
+)
+Note
+1
+These instances can support maximum performance for 30 minutes at least once every
+24 hours, after which they revert to their baseline performance. Other instances can sustain the maximum performance
+indefinitely. If your workload requires sustained maximum performance for longer than 30 minutes, use one of these
+instances.
+Instance store specifications
+The following table shows the instance store volume configuration for supported instance types,
+along with the aggregated IOPS performance with 4,096 byte block size at queue depth saturation.
+Instance type
+Instance store volumes
+Instance store type
+100% random read IOPS / Write IOPS
+Needs initialization
+1
+TRIM support
+2
+C5ad
+c5ad.large
+1 x 75 GB
+NVMe SSD
+16,283 / 7,105
+â
+c5ad.xlarge
+1 x 150 GB
+NVMe SSD
+32,566 / 14,211
+â
+c5ad.2xlarge
+1 x 300 GB
+NVMe SSD
+65,132 / 28,421
+â
+c5ad.4xlarge
+2 x 300 GB
+NVMe SSD
+130,262 / 56,842
+â
+c5ad.8xlarge
+2 x 600 GB
+NVMe SSD
+260,526 / 113,684
+â
+c5ad.12xlarge
+2 x 900 GB
+NVMe SSD
+412,500 / 180,000
+â
+c5ad.16xlarge
+2 x 1200 GB
+NVMe SSD
+521,052 / 227,368
+â
+c5ad.24xlarge
+2 x 1900 GB
+NVMe SSD
+825,000 / 360,000
+â
+C5d
+c5d.large
+1 x 50 GB
+NVMe SSD
+20,000 / 9,000
+â
+c5d.xlarge
+1 x 100 GB
+NVMe SSD
+40,000 / 18,000
+â
+c5d.2xlarge
+1 x 200 GB
+NVMe SSD
+80,000 / 37,000
+â
+c5d.4xlarge
+1 x 400 GB
+NVMe SSD
+175,000 / 75,000
+â
+c5d.9xlarge
+1 x 900 GB
+NVMe SSD
+350,000 / 170,000
+â
+c5d.12xlarge
+2 x 900 GB
+NVMe SSD
+700,000 / 340,000
+â
+c5d.18xlarge
+2 x 900 GB
+NVMe SSD
+700,000 / 340,000
+â
+c5d.24xlarge
+4 x 900 GB
+NVMe SSD
+1,400,000 / 680,000
+â
+c5d.metal
+4 x 900 GB
+NVMe SSD
+1,400,000 / 680,000
+â
+C6gd
+c6gd.medium
+1 x 59 GB
+NVMe SSD
+13,438 / 5,625
+â
+c6gd.large
+1 x 118 GB
+NVMe SSD
+26,875 / 11,250
+â
+c6gd.xlarge
+1 x 237 GB
+NVMe SSD
+53,750 / 22,500
+â
+c6gd.2xlarge
+1 x 474 GB
+NVMe SSD
+107,500 / 45,000
+â
+c6gd.4xlarge
+1 x 950 GB
+NVMe SSD
+215,000 / 90,000
+â
+c6gd.8xlarge
+1 x 1900 GB
+NVMe SSD
+430,000 / 180,000
+â
+c6gd.12xlarge
+2 x 1425 GB
+NVMe SSD
+645,000 / 270,000
+â
+c6gd.16xlarge
+2 x 1900 GB
+NVMe SSD
+860,000 / 360,000
+â
+c6gd.metal
+2 x 1900 GB
+NVMe SSD
+860,000 / 360,000
+â
+C6id
+c6id.large
+1 x 118 GB
+NVMe SSD
+33,542 / 16,771
+â
+c6id.xlarge
+1 x 237 GB
+NVMe SSD
+67,083 / 33,542
+â
+c6id.2xlarge
+1 x 474 GB
+NVMe SSD
+134,167 / 67,084
+â
+c6id.4xlarge
+1 x 950 GB
+NVMe SSD
+268,333 / 134,167
+â
+c6id.8xlarge
+1 x 1900 GB
+NVMe SSD
+536,666 / 268,334
+â
+c6id.12xlarge
+2 x 1425 GB
+NVMe SSD
+804,998 / 402,500
+â
+c6id.16xlarge
+2 x 1900 GB
+NVMe SSD
+1,073,332 / 536,668
+â
+c6id.24xlarge
+4 x 1425 GB
+NVMe SSD
+1,609,996 / 805,000
+â
+c6id.32xlarge
+4 x 1900 GB
+NVMe SSD
+2,146,664 / 1,073,336
+â
+c6id.metal
+4 x 1900 GB
+NVMe SSD
+2,146,664 / 1,073,336
+â
+C7gd
+c7gd.medium
+1 x 59 GB
+NVMe SSD
+16,771 / 8,385
+â
+c7gd.large
+1 x 118 GB
+NVMe SSD
+33,542 / 16,771
+â
+c7gd.xlarge
+1 x 237 GB
+NVMe SSD
+67,083 / 33,542
+â
+c7gd.2xlarge
+1 x 474 GB
+NVMe SSD
+134,167 / 67,084
+â
+c7gd.4xlarge
+1 x 950 GB
+NVMe SSD
+268,333 / 134,167
+â
+c7gd.8xlarge
+1 x 1900 GB
+NVMe SSD
+536,666 / 268,334
+â
+c7gd.12xlarge
+2 x 1425 GB
+NVMe SSD
+804,998 / 402,500
+â
+c7gd.16xlarge
+2 x 1900 GB
+NVMe SSD
+1,073,332 / 536,668
+â
+c7gd.metal
+2 x 1900 GB
+NVMe SSD
+1,073,332 / 536,668
+â
+C8gd
+c8gd.medium
+1 x 59 GB
+NVMe SSD
+16,771 / 8,385
+â
+c8gd.large
+1 x 118 GB
+NVMe SSD
+33,542 / 16,771
+â
+c8gd.xlarge
+1 x 237 GB
+NVMe SSD
+67,083 / 33,542
+â
+c8gd.2xlarge
+1 x 474 GB
+NVMe SSD
+134,167 / 67,084
+â
+c8gd.4xlarge
+1 x 950 GB
+NVMe SSD
+268,333 / 134,167
+â
+c8gd.8xlarge
+1 x 1900 GB
+NVMe SSD
+536,666 / 268,334
+â
+c8gd.12xlarge
+3 x 950 GB
+NVMe SSD
+804,999 / 402,501
+â
+c8gd.16xlarge
+2 x 1900 GB
+NVMe SSD
+1,073,332 / 536,668
+â
+c8gd.24xlarge
+3 x 1900 GB
+NVMe SSD
+1,609,998 / 805,002
+â
+c8gd.48xlarge
+6 x 1900 GB
+NVMe SSD
+3,219,996 / 1,610,004
+â
+c8gd.metal-24xl
+3 x 1900 GB
+NVMe SSD
+1,609,998 / 805,002
+â
+c8gd.metal-48xl
+6 x 1900 GB
+NVMe SSD
+3,219,996 / 1,610,004
+â
+1
+Volumes attached to certain instances suffer a first-write
+penalty unless initialized. For more information, see
+Optimize disk performance for
+instance store volumes
+.
+2
+For more information, see
+Instance
+store volume TRIM support
+.
+Security specifications
+Instance type
+EBS encryption
+Instance store encryption
+Encryption in transit
+AMD SEV-SNP
+NitroTPM
+Nitro Enclaves
+C5
+c5.large
+â
+Instance store not supported
+â
+â
+â
+â
+c5.xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c5.2xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c5.4xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c5.9xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c5.12xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c5.18xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c5.24xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c5.metal
+â
+Instance store not supported
+â
+â
+â
+â
+C5a
+c5a.large
+â
+Instance store not supported
+â
+â
+â
+â
+c5a.xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c5a.2xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c5a.4xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c5a.8xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c5a.12xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c5a.16xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c5a.24xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+C5ad
+c5ad.large
+â
+â
+â
+â
+â
+â
+c5ad.xlarge
+â
+â
+â
+â
+â
+â
+c5ad.2xlarge
+â
+â
+â
+â
+â
+â
+c5ad.4xlarge
+â
+â
+â
+â
+â
+â
+c5ad.8xlarge
+â
+â
+â
+â
+â
+â
+c5ad.12xlarge
+â
+â
+â
+â
+â
+â
+c5ad.16xlarge
+â
+â
+â
+â
+â
+â
+c5ad.24xlarge
+â
+â
+â
+â
+â
+â
+C5d
+c5d.large
+â
+â
+â
+â
+â
+â
+c5d.xlarge
+â
+â
+â
+â
+â
+â
+c5d.2xlarge
+â
+â
+â
+â
+â
+â
+c5d.4xlarge
+â
+â
+â
+â
+â
+â
+c5d.9xlarge
+â
+â
+â
+â
+â
+â
+c5d.12xlarge
+â
+â
+â
+â
+â
+â
+c5d.18xlarge
+â
+â
+â
+â
+â
+â
+c5d.24xlarge
+â
+â
+â
+â
+â
+â
+c5d.metal
+â
+â
+â
+â
+â
+â
+C5n
+c5n.large
+â
+Instance store not supported
+â
+â
+â
+â
+c5n.xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c5n.2xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c5n.4xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c5n.9xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c5n.18xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c5n.metal
+â
+Instance store not supported
+â
+â
+â
+â
+C6a
+c6a.large
+â
+Instance store not supported
+â
+â
+â
+â
+c6a.xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6a.2xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6a.4xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6a.8xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6a.12xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6a.16xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6a.24xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6a.32xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6a.48xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6a.metal
+â
+Instance store not supported
+â
+â
+â
+â
+C6g
+c6g.medium
+â
+Instance store not supported
+â
+â
+â
+â
+c6g.large
+â
+Instance store not supported
+â
+â
+â
+â
+c6g.xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6g.2xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6g.4xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6g.8xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6g.12xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6g.16xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6g.metal
+â
+Instance store not supported
+â
+â
+â
+â
+C6gd
+c6gd.medium
+â
+â
+â
+â
+â
+â
+c6gd.large
+â
+â
+â
+â
+â
+â
+c6gd.xlarge
+â
+â
+â
+â
+â
+â
+c6gd.2xlarge
+â
+â
+â
+â
+â
+â
+c6gd.4xlarge
+â
+â
+â
+â
+â
+â
+c6gd.8xlarge
+â
+â
+â
+â
+â
+â
+c6gd.12xlarge
+â
+â
+â
+â
+â
+â
+c6gd.16xlarge
+â
+â
+â
+â
+â
+â
+c6gd.metal
+â
+â
+â
+â
+â
+â
+C6gn
+c6gn.medium
+â
+Instance store not supported
+â
+â
+â
+â
+c6gn.large
+â
+Instance store not supported
+â
+â
+â
+â
+c6gn.xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6gn.2xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6gn.4xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6gn.8xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6gn.12xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6gn.16xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+C6i
+c6i.large
+â
+Instance store not supported
+â
+â
+â
+â
+c6i.xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6i.2xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6i.4xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6i.8xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6i.12xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6i.16xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6i.24xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6i.32xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6i.metal
+â
+Instance store not supported
+â
+â
+â
+â
+C6id
+c6id.large
+â
+â
+â
+â
+â
+â
+c6id.xlarge
+â
+â
+â
+â
+â
+â
+c6id.2xlarge
+â
+â
+â
+â
+â
+â
+c6id.4xlarge
+â
+â
+â
+â
+â
+â
+c6id.8xlarge
+â
+â
+â
+â
+â
+â
+c6id.12xlarge
+â
+â
+â
+â
+â
+â
+c6id.16xlarge
+â
+â
+â
+â
+â
+â
+c6id.24xlarge
+â
+â
+â
+â
+â
+â
+c6id.32xlarge
+â
+â
+â
+â
+â
+â
+c6id.metal
+â
+â
+â
+â
+â
+â
+C6in
+c6in.large
+â
+Instance store not supported
+â
+â
+â
+â
+c6in.xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6in.2xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6in.4xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6in.8xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6in.12xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6in.16xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6in.24xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6in.32xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c6in.metal
+â
+Instance store not supported
+â
+â
+â
+â
+C7a
+c7a.medium
+â
+Instance store not supported
+â
+â
+â
+â
+c7a.large
+â
+Instance store not supported
+â
+â
+â
+â
+c7a.xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7a.2xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7a.4xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7a.8xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7a.12xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7a.16xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7a.24xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7a.32xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7a.48xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7a.metal-48xl
+â
+Instance store not supported
+â
+â
+â
+â
+C7g
+c7g.medium
+â
+Instance store not supported
+â
+â
+â
+â
+c7g.large
+â
+Instance store not supported
+â
+â
+â
+â
+c7g.xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7g.2xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7g.4xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7g.8xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7g.12xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7g.16xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7g.metal
+â
+Instance store not supported
+â
+â
+â
+â
+C7gd
+c7gd.medium
+â
+â
+â
+â
+â
+â
+c7gd.large
+â
+â
+â
+â
+â
+â
+c7gd.xlarge
+â
+â
+â
+â
+â
+â
+c7gd.2xlarge
+â
+â
+â
+â
+â
+â
+c7gd.4xlarge
+â
+â
+â
+â
+â
+â
+c7gd.8xlarge
+â
+â
+â
+â
+â
+â
+c7gd.12xlarge
+â
+â
+â
+â
+â
+â
+c7gd.16xlarge
+â
+â
+â
+â
+â
+â
+c7gd.metal
+â
+â
+â
+â
+â
+â
+C7gn
+c7gn.medium
+â
+Instance store not supported
+â
+â
+â
+â
+c7gn.large
+â
+Instance store not supported
+â
+â
+â
+â
+c7gn.xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7gn.2xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7gn.4xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7gn.8xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7gn.12xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7gn.16xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7gn.metal
+â
+Instance store not supported
+â
+â
+â
+â
+C7i
+c7i.large
+â
+Instance store not supported
+â
+â
+â
+â
+c7i.xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7i.2xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7i.4xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7i.8xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7i.12xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7i.16xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7i.24xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7i.48xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7i.metal-24xl
+â
+Instance store not supported
+â
+â
+â
+â
+c7i.metal-48xl
+â
+Instance store not supported
+â
+â
+â
+â
+C7i-flex
+c7i-flex.large
+â
+Instance store not supported
+â
+â
+â
+â
+c7i-flex.xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7i-flex.2xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7i-flex.4xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7i-flex.8xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7i-flex.12xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c7i-flex.16xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+C8g
+c8g.medium
+â
+Instance store not supported
+â
+â
+â
+â
+c8g.large
+â
+Instance store not supported
+â
+â
+â
+â
+c8g.xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c8g.2xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c8g.4xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c8g.8xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c8g.12xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c8g.16xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c8g.24xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c8g.48xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c8g.metal-24xl
+â
+Instance store not supported
+â
+â
+â
+â
+c8g.metal-48xl
+â
+Instance store not supported
+â
+â
+â
+â
+C8gd
+c8gd.medium
+â
+â
+â
+â
+â
+â
+c8gd.large
+â
+â
+â
+â
+â
+â
+c8gd.xlarge
+â
+â
+â
+â
+â
+â
+c8gd.2xlarge
+â
+â
+â
+â
+â
+â
+c8gd.4xlarge
+â
+â
+â
+â
+â
+â
+c8gd.8xlarge
+â
+â
+â
+â
+â
+â
+c8gd.12xlarge
+â
+â
+â
+â
+â
+â
+c8gd.16xlarge
+â
+â
+â
+â
+â
+â
+c8gd.24xlarge
+â
+â
+â
+â
+â
+â
+c8gd.48xlarge
+â
+â
+â
+â
+â
+â
+c8gd.metal-24xl
+â
+â
+â
+â
+â
+â
+c8gd.metal-48xl
+â
+â
+â
+â
+â
+â
+C8gn
+c8gn.medium
+â
+Instance store not supported
+â
+â
+â
+â
+c8gn.large
+â
+Instance store not supported
+â
+â
+â
+â
+c8gn.xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c8gn.2xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c8gn.4xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c8gn.8xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c8gn.12xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c8gn.16xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c8gn.24xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c8gn.48xlarge
+â
+Instance store not supported
+â
+â
+â
+â
+c8gn.metal-24xl
+â
+Instance store not supported
+â
+â
+â
+â
+c8gn.metal-48xl
+â
+Instance store not supported
+â
+â
+â
+â
+Javascript is disabled or is unavailable in your browser.
+To use the Amazon Web Services Documentation, Javascript must be enabled. Please refer to your browser's Help pages for instructions.
+Document Conventions
+General purpose
+Memory optimized
+Did this page help you? - Yes
+Thanks for letting us know we're doing a good job!
+If you've got a moment, please tell us what we did right so we can do more of it.
+Did this page help you? - No
+Thanks for letting us know this page needs work. We're sorry we let you down.
+If you've got a moment, please tell us how we can make the documentation better.

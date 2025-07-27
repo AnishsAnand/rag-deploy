@@ -1,0 +1,1128 @@
+Amazon EC2 Release Notes
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/
+A RSS feed containing the latest updates on https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/.
+en-us
+Wed, 23 Jul 2025 22:56:12 GMT
+Skip OS shutdown during instance termination
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-terminate-methods.html
+You can skip the graceful operating system (OS) shutdown when terminating an
+instance.
+Wed, 23 Jul 2025 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Skip_OS_shutdown_during_instance_termination_2025-07-23
+Skip OS shutdown during instance stop
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-stop-methods.html
+You can skip the graceful operating system (OS) shutdown when stopping an instance.
+Wed, 23 Jul 2025 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Skip_OS_shutdown_during_instance_stop_2025-07-23
+P6-B200 Capacity Blocks in us-east-1
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-blocks-prerequisites.html
+P6-B200 Capacity Blocks are now available in US East (N. Virginia) - <code class="code">us-east-1</code>.
+Wed, 23 Jul 2025 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#P6-B200_Capacity_Blocks_in_us-east-1_2025-07-23
+Updated managed policy for the EC2 Fast Launch service linked role
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-iam-awsmanpol.html#security-iam-awsmanpol-EC2FastLaunchServiceRolePolicy
+To help prevent orphaned resources, Amazon EC2 updated this policy to add permission to
+describe volumes, volume attributes and network interfaces, and to delete volumes and
+network interfaces that EC2 Fast Launch created.
+Thu, 17 Jul 2025 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Updated_managed_policy_for_the_EC2_Fast_Launch_service_linked_role_2025-07-17
+EC2 Serial Console - additional Region support
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-serial-console-prerequisites.html
+EC2 Serial Console is now also available in Asia Pacific (Thailand) and
+Mexico (Central).
+Tue, 15 Jul 2025 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#EC2_Serial_Console_-_additional_Region_support_2025-07-15
+EC2 Instance Connect - additional Region support
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-linux-inst-eic.html
+EC2 Instance Connect is now also available in Asia Pacific (Thailand) and
+Mexico (Central).
+Tue, 15 Jul 2025 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#EC2_Instance_Connect_-_additional_Region_support_2025-07-15
+Hardware packet timestamping
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/set-time.html#hardware-packet-timestamping
+You can enable hardware packet timestamping on your EC2 instance to add a 64-bit
+nanosecond-precision timestamp to every incoming network packet.
+Mon, 23 Jun 2025 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Hardware_packet_timestamping_2025-06-23
+Delete snapshots during AMI deregistration
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/deregister-ami.html
+When deregistering an AMI, you can automatically delete its associated snapshots at the
+same time.
+Wed, 28 May 2025 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Delete_snapshots_during_AMI_deregistration_2025-05-28
+User-initiated reboot migration
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/schedevents_actions_reboot.html#reboot-migration
+When your instance receives an EC2 scheduled reboot event notification, it is enabled by
+default for instance migration when you reboot the instance before the
+event.
+Tue, 20 May 2025 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#User-initiated_reboot_migration_2025-05-20
+SIP configuration for Amazon EC2 Mac instances
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/mac-sip-settings.html
+You can configure System Integrity Protection (SIP) settings for x86 Mac instances
+and Apple silicon Mac instances.
+Tue, 20 May 2025 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#SIP_configuration_for_Amazon_EC2_Mac_instances_2025-05-20
+Root volume ownership delegation
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/mac-instance-updates.html
+You can now automate root volume ownership delegation for the Amazon EBS root volume when
+updating the operating system on Apple silicon Mac instances.
+Tue, 20 May 2025 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Root_volume_ownership_delegation_2025-05-20
+Instance topology for P6-B200 instances
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-topology.html
+You can get the instance topology information for <code class="code">p6-b200.48xlarge</code>
+instances.
+Thu, 15 May 2025 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Instance_topology_for_P6-B200_instances_2025-05-15
+Updated managed policies for the EC2 Fast Launch service linked role
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-iam-awsmanpol.html#security-iam-awsmanpol-EC2FastLaunchServiceRolePolicy
+Updated the EC2 Fast Launch service linked role policy with access to create
+and maintain Amazon EventBridge event rules, and other actions to enhance the EC2 Fast Launch
+experience. For more information about permissions granted by the service linked
+role, see <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/slr-windows-fast-launch.html#slr-permissions-granted-win-faster-launching">Permissions granted by <code class="code">EC2FastLaunchServiceRolePolicy</code></a>.
+Wed, 14 May 2025 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Updated_managed_policies_for_the_EC2_Fast_Launch_service_linked_role_2025-05-14
+Updated managed policies for the EC2 Fast Launch full access policy
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-iam-awsmanpol.html#security-iam-awsmanpol-EC2FastLaunchFullAccess
+Updated the EC2 Fast Launch full access policy with permission to Create and
+Modify Launch Template operations, to create network and security group resources,
+authorize ingress rules, and delete resources that EC2 Fast Launch created. The policy can
+additionally describe and create CloudFormation stacks, and delete stacks that EC2 Fast Launch
+created.
+Wed, 14 May 2025 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Updated_managed_policies_for_the_EC2_Fast_Launch_full_access_policy_2025-05-14
+Simplified onboarding for EC2 Fast Launch
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/win-start-fast-launch-prereqs.html
+Updated EC2 Fast Launch to simplify the onboarding process.
+Wed, 14 May 2025 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Simplified_onboarding_for_EC2_Fast_Launch_2025-05-14
+AWS Config integration with Allowed AMIs
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-allowed-amis.html#identify-instances-with-allowed-AMIs
+Use the <a href="https://docs.aws.amazon.com/config/latest/developerguide/ec2-instance-launched-with-allowed-ami.html">ec2-instance-launched-with-allowed-ami</a> AWS Config rule to check if
+running or stopped instances were launched with AMIs that meet your Allowed AMIs
+criteria.
+Tue, 11 Mar 2025 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#AWS_Config_integration_with_Allowed_AMIs_2025-03-11
+Updated AWSEC2CapacityReservationFleetRolePolicy managed policy
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-iam-awsmanpol.html#security-iam-awsmanpol-AWSEC2CapacityReservationFleetRolePolicy
+Amazon EC2 updated the <code class="code">AWSEC2CapacityReservationFleetRolePolicy</code> managed policy to use the
+<code class="code">ArnLike</code> condition operator instead of the <code class="code">StringLike</code> condition operator.
+Mon, 3 Mar 2025 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Updated_AWSEC2CapacityReservationFleetRolePolicy_managed_policy_2025-03-03
+Time-based AMI copies
+https://docs.aws.amazon.com/ebs/latest/userguide/time-based-copies.html
+You can now request a completion duration for EBS-backed AMI copy operations to ensure that
+AMI copies are completed within a specific timeframe.
+Tue, 25 Feb 2025 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Time-based_AMI_copies_2025-02-25
+Updated AmazonEC2ReadOnlyAccess policy
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-iam-awsmanpol.html#security-iam-awsmanpol-AmazonEC2ReadOnlyAccess
+Amazon EC2 added the <code class="code">GetSecurityGroupsForVpc</code> operation to the existing AmazonEC2ReadOnlyAccess policy.
+Fri, 27 Dec 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Updated_AmazonEC2ReadOnlyAccess_policy_2024-12-27
+Managed instances
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-ec2-managed-instances.html
+You can now view Amazon EC2 managed instances in the EC2 console.
+Sun, 1 Dec 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Managed_instances_2024-12-01
+Declarative policies
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/DocumentHistory.html
+You can now use declarative policies to apply account-level settings across multiple
+Regions and accounts simultaneously. Declarative policies are supported for
+configuring EC2 serial console access, Allowed AMIs, IMDS defaults, and block
+public access settings for VPCs, AMIs, and snapshots. For more information, see
+<a href="https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_declarative.html">Declarative policies</a> in the <em>AWS Organizations User
+Guide</em>, as well as the specific documentation for each supported
+feature.
+Sun, 1 Dec 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Declarative_policies_2024-12-01
+Allowed AMIs
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-allowed-amis.html
+You can now control the discovery and use of AMIs in Amazon EC2 by specifying criteria that
+AMIs must meet.
+Sun, 1 Dec 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Allowed_AMIs_2024-12-01
+Instant Capacity Blocks
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-blocks.html
+You can now reserve Capacity Blocks for ML, that can start as soon as 30 minutes.
+Thu, 21 Nov 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Instant_Capacity_Blocks_2024-11-21
+Future-dated Capacity Reservations
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-reservations.html
+You can now request Capacity Reservations for a future date.
+Thu, 21 Nov 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Future-dated_Capacity_Reservations_2024-11-21
+Extend Capacity Block
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-blocks-extend.html
+You can now extend the duration of existing Capacity Blocks.
+Thu, 21 Nov 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Extend_Capacity_Block_2024-11-21
+6 month Capacity Blocks
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-blocks.html
+You can now reserve Capacity Blocks for ML for up to 6 months (182 days).
+Thu, 21 Nov 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#6_month_Capacity_Blocks_2024-11-21
+Saved filter sets
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Filtering.html#saved-filter-sets-in-the-ec2-console
+You can now create customized groups of filters and reuse them to efficiently view your
+EC2 resources.
+Wed, 20 Nov 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Saved_filter_sets_2024-11-20
+Performance protection
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-attribute-based-instance-type-selection.html#ec2fleet-abis-performance-protection
+When using attribute-based instance type selection for your EC2 Fleet or Spot Fleet, you can now
+enable performance protection to ensure that the selected instance types are
+similar to or exceed a specified performance baseline.
+Wed, 20 Nov 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Performance_protection_2024-11-20
+Capacity Reservations only
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-reservations.html
+You can now specify that instances will only run in a Capacity Reservation or Capacity Reservation resource group.
+Wed, 20 Nov 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Capacity_Reservations_only_2024-11-20
+Identify source AMI
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/identify-source-ami-used-to-create-new-ami.html
+You can now identify the source AMI that was used to create an AMI.
+Wed, 13 Nov 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Identify_source_AMI_2024-11-13
+Split capacity
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reservations-split.html
+You can split off capacity from an existing Capacity Reservation to create a new reservation.
+Wed, 30 Oct 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Split_capacity_2024-10-30
+Move capacity
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reservations-move.html
+You can now move capacity from one Capacity Reservation to another.
+Wed, 30 Oct 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Move_capacity_2024-10-30
+Beginner tutorials
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-launch-tutorials.html
+Two new tutorials for beginners: Launch my very first EC2 instance and Launch a test EC2 instance and connect to it.
+Mon, 21 Oct 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Beginner_tutorials_2024-10-21
+Windows Server 2025 support
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/DocumentHistory.html
+Add support for Windows Server 2025.
+Wed, 16 Oct 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Windows_Server_2025_support_2024-10-16
+EC2 Global View
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/global-view.html
+EC2 Global View now enables you to view Capacity Reservations and Capacity Blocks in your account across all Regions.
+Wed, 16 Oct 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#EC2_Global_View_2024-10-16
+Live migration host maintenance
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-maintenance.html
+Amazon EC2 Dedicated Hosts now support live migration host maintenance, which automatically migrates
+supported instances from an impaired Dedicated Host to a replacement Dedicated Host without stopping and
+restarting them.
+Tue, 15 Oct 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Live_migration_host_maintenance_2024-10-15
+Billing assignment for shared Capacity Reservations
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/assign-billing.html
+You can now assign the billing of any available capacity of a shared Capacity Reservation to a
+consumer account that belongs to the same AWS organization.
+Mon, 14 Oct 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Billing_assignment_for_shared_Capacity_Reservations_2024-10-14
+PTP hardware clock - additional Region support
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configure-ec2-ntp.html#connect-to-the-ptp-hardware-clock
+The PTP hardware clock is now also available in US East (Ohio) and
+Asia Pacific (Malaysia).
+Mon, 23 Sep 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#PTP_hardware_clock_-_additional_Region_support_2024-09-23
+EC2 Instance Connect supports IPv6
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-linux-inst-eic.html
+You can now use EC2 Instance Connect to connect to the public IPv6 address of your
+instance.
+Mon, 23 Sep 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#EC2_Instance_Connect_supports_IPv6_2024-09-23
+EC2 Instance Connect prefix lists
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-connect-prerequisites.html#ec2-instance-connect-setup-security-group
+You can now select a managed prefix list for IPv4 or IPv6 addresses when creating rules in
+your security groups to allow SSH traffic from the EC2 Instance Connect service.
+Mon, 23 Sep 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#EC2_Instance_Connect_prefix_lists_2024-09-23
+New capabilities to manage On-Demand Capacity Reservations
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reservations-split.html
+You can now split your Capacity Reservation, move capacity between Capacity Reservations, and modify the instance eligibility attribute of your Capacity Reservation.
+Wed, 14 Aug 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#New_capabilities_to_manage_On-Demand_Capacity_Reservations_2024-08-14
+Hibernation support for C6g, C6gn, C6gd, C7g, C7gd, M6g, M6gd, M7g, M7gd, R6g, and
+R6gd
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hibernating-prerequisites.html#hibernation-prereqs-supported-instance-families
+Hibernate your newly-launched instances running on C6g, C6gn, C6gd, C7g, C7gd, M6g, M6gd,
+M7g, M7gd, R6g, and R6gd instance types.
+Tue, 30 Jul 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Hibernation_support_for_C6g,_C6gn,_C6gd,_C7g,_C7gd,_M6g,_M6gd,_M7g,_M7gd,_R6g,_and
+R6gd_2024-07-30
+Hibernation support for AMIs that support Graviton instance types
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hibernating-prerequisites.html#hibernation-prereqs-supported-amis
+Hibernate your newly-launched instances that were launched from an Amazon Linux or Ubuntu
+AMI that supports Graviton instance types.
+Tue, 30 Jul 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Hibernation_support_for_AMIs_that_support_Graviton_instance_types_2024-07-30
+Additional instance types supported for Credential Guard
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/credential-guard.html
+You can now enable Credential Guard for C7i, C7-flex, M7i, M7i-flex, R7i, R7i-flex, and T3 instances.
+Wed, 26 Jun 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Additional_instance_types_supported_for_Credential_Guard_2024-06-26
+EC2 M1 Ultra Mac instances
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/DocumentHistory.html
+New general purpose instance type that features Apple M1 Ultra processors.
+Mon, 17 Jun 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#EC2_M1_Ultra_Mac_instances_2024-06-17
+EC2 instance type finder – additional parameters
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-ec2-instance-type-recommendations.html
+The EC2 instance type finder now provides additional parameters for you to specify more
+detailed requirements for your workload.
+Wed, 5 Jun 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#EC2_instance_type_finder_–_additional_parameters_2024-06-05
+U7i-12tb, U7in-16tb, U7in-24tb, and U7in-32tb instances
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/DocumentHistory.html
+New high memory instance types that feature 4th generation Intel Xeon
+Scalable processors.
+Tue, 28 May 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#U7i-12tb,_U7in-16tb,_U7in-24tb,_and_U7in-32tb_instances_2024-05-28
+New managed policy for EC2 Fast Launch
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-iam-awsmanpol.html#security-iam-awsmanpol-EC2FastLaunchFullAccess
+Added the EC2FastLaunchFullAccess policy to perform API actions
+related to the EC2 Fast Launch feature from an instance.
+Tue, 14 May 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#New_managed_policy_for_EC2_Fast_Launch_2024-05-14
+AMI deregistration protection
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/deregister-ami.html#ami-deregistration-protection
+You can turn on deregistration protection on an AMI to prevent accidental or malicious
+deletion.
+Tue, 23 Apr 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#AMI_deregistration_protection_2024-04-23
+PTP hardware clock – instance type support
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/set-time.html#connect-to-the-ptp-hardware-clock
+The PTP hardware clock is now available on C7a, C7i, M7a, M7g, M7i, R7a, and R7i instance
+types.
+Mon, 22 Apr 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#PTP_hardware_clock_–_instance_type_support_2024-04-22
+Added Nitro performance considerations for enhanced networking
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ena-nitro-perf.html
+This page focuses on network considerations to help with performance
+tuning for your Nitro based Amazon EC2 instances.
+Thu, 4 Apr 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Added_Nitro_performance_considerations_for_enhanced_networking_2024-04-04
+New managed policy for VSS based EBS snapshots
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-iam-awsmanpol.html#security-iam-awsmanpol-AWSEC2VssSnapshotPolicy
+Amazon EC2 VSS has a new IAM managed policy available that you can add to your
+instance profile role to ensure that your permissions stay up-to-date
+and follow best practices.
+Thu, 28 Mar 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#New_managed_policy_for_VSS_based_EBS_snapshots_2024-03-28
+PTP hardware clock – US East (N. Virginia)
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/set-time.html#connect-to-the-ptp-hardware-clock
+The PTP hardware clock is now available in the US East (N. Virginia) Region.
+Tue, 26 Mar 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#PTP_hardware_clock_–_US_East_(N._Virginia)_2024-03-26
+Set IMDSv2 as the account default
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-new-instances.html#set-imdsv2-account-defaults
+You can set all new EC2 instance launches in your account to use Instance Metadata Service Version 2
+(IMDSv2) by default.
+Mon, 25 Mar 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Set_IMDSv2_as_the_account_default_2024-03-25
+Tag new Linux AMIs created from a snapshot
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/creating-an-ami-ebs.html#creating-launching-ami-from-snapshot
+When you create a Linux AMI from a snapshot, you can tag the new AMI.
+Thu, 7 Mar 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Tag_new_Linux_AMIs_created_from_a_snapshot_2024-03-07
+Tag new AMIs and snapshots when copying
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/CopyingAMIs.html
+When you copy an AMI, you can tag the new AMI and the new snapshots with the same tags, or
+you can tag them with different tags.
+Thu, 7 Mar 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Tag_new_AMIs_and_snapshots_when_copying_2024-03-07
+Remove AWS Management Pack pages
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/DocumentHistory.html
+The AWS Management Pack was primarily used with Windows Server 2012 and prior.
+Those legacy OS platform versions are no longer supported. To manage and troubleshoot
+your fleet of servers running on AWS and on-premises, see
+<a href="https://aws.amazon.com/systems-manager/fleet-manager/" rel="noopener noreferrer" target="_blank">AWS Systems Manager Fleet Manager</a>.
+Mon, 12 Feb 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Remove_AWS_Management_Pack_pages_2024-02-12
+EC2 Instance Connect preinstalled on macOS AMIs
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-connect-prerequisites.html#eic-prereqs-amis
+EC2 Instance Connect now comes preinstalled on macOS Sonoma 14.2.1 or later, macOS Ventura 13.6.3
+or later, and macOS Monterey 12.7.2 or later AMIs.
+Fri, 26 Jan 2024 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#EC2_Instance_Connect_preinstalled_on_macOS_AMIs_2024-01-26
+EC2 Instance Connect support for CentOS, macOS, and RHEL
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-connect-set-up.html
+You can now install EC2 Instance Connect on supported CentOS, macOS, and RHEL AMIs.
+Wed, 6 Dec 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#EC2_Instance_Connect_support_for_CentOS,_macOS,_and_RHEL_2023-12-06
+Hibernation support for C7a, C7i, R7a, R7i, and R7iz
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hibernating-prerequisites.html#hibernation-prereqs-supported-instance-families
+Hibernate your newly-launched instances running on C7a, C7i, R7a, R7i, and R7iz instance types.
+Fri, 1 Dec 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Hibernation_support_for_C7a,_C7i,_R7a,_R7i,_and_R7iz_2023-12-01
+Amazon Q EC2 instance type selector
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-ec2-instance-type-recommendations.html
+Amazon Q EC2 instance type selector considers your use case, workload type, and CPU manufacturer preference, as
+well as how you prioritize price and performance. It then uses this data to
+provide guidance and suggestions for Amazon EC2 instance types that are best
+suited for your new workloads.
+Tue, 28 Nov 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Amazon_Q_EC2_instance_type_selector_2023-11-28
+EC2 Free Tier
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-free-tier-usage.html
+You can track your EC2 Free Tier usage from the EC2 Dashboard.
+Sun, 26 Nov 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#EC2_Free_Tier_2023-11-26
+Console-to-Code
+https://docs.aws.amazon.com/ec2/latest/devguide/console-to-code.html
+Console-to-Code can help you get started with your automation code. Console-to-Code records your console
+actions, and then uses generative AI to suggest code in your preferred
+infrastructure-as code format. You can use the code as a starting point,
+customizing it to make it production-ready for your specific use case.
+Sun, 26 Nov 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Console-to-Code_2023-11-26
+Configurable idle connection tracking timeouts
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-connection-tracking.html#connection-tracking-timeouts
+Security group connections that remain idle can lead to connection tracking exhaustion and cause connections not to be tracked and packets to be dropped. You can now set the timeout in seconds for security group connection tracking on an Elastic network interface.
+Fri, 17 Nov 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Configurable_idle_connection_tracking_timeouts_2023-11-17
+PTP hardware clock
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/set-time.html#connect-to-the-ptp-hardware-clock
+Supported instances now have a Precision Time Protocol (PTP) hardware clock. The PTP
+hardware clock supports either NTP or a direct PTP connection.
+Thu, 16 Nov 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#PTP_hardware_clock_2023-11-16
+Change instance type of instance enabled for hibernation
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-hibernate-overview.html
+You can now change the instance type of an instance enabled for hibernation when it is in
+the <code class="code">stopped</code> state.
+Thu, 16 Nov 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Change_instance_type_of_instance_enabled_for_hibernation_2023-11-16
+Instance topology
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-topology.html
+You can use the DescribeInstanceTopology API to detect the location of your instances, and
+then use this information to optimize HPC and ML jobs by running them on
+instances that are physically closer to each other.
+Mon, 13 Nov 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Instance_topology_2023-11-13
+EC2 Fast Launch shared AMI support
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/win-ami-config-fast-launch.html
+You can now enable EC2 Fast Launch on an AMI that's shared with you.
+When you enable EC2 Fast Launch on a shared AMI, the pre-provisioned snapshots
+for faster launching are created in your account.
+Mon, 6 Nov 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#EC2_Fast_Launch_shared_AMI_support_2023-11-06
+Capacity Blocks for ML
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-blocks.html
+You can now reserve GPU instances on a future date to support your short duration machine learning (ML) workloads.
+Tue, 31 Oct 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Capacity_Blocks_for_ML_2023-10-31
+Spot Instance hibernation
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/DocumentHistory.html
+You can now hibernate your Spot Instances using the same hibernation experience and instance
+families that are currently available for On-Demand Instances.
+Tue, 24 Oct 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Spot_Instance_hibernation_2023-10-24
+Default settings for block public access for AMIs
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/sharingamis-intro.html#block-public-access-to-amis-default-settings
+Block public access for AMIs is now enabled by default for all new accounts and for
+existing accounts with no public AMIs.
+Fri, 20 Oct 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Default_settings_for_block_public_access_for_AMIs_2023-10-20
+Amazon EC2 Global View
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/global-view.html
+Amazon EC2 Global View supports additional resource types and customizable display options.
+Wed, 18 Oct 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Amazon_EC2_Global_View_2023-10-18
+Hibernation support for Ubuntu 22.04.2 LTS (Jammy Jellyfish)
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hibernating-prerequisites.html#hibernation-prereqs-supported-amis
+Hibernate your newly-launched instances that were launched from the Ubuntu 22.04.2 LTS
+(Jammy Jellyfish) AMI.
+Mon, 16 Oct 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Hibernation_support_for_Ubuntu_22.04.2_LTS_(Jammy_Jellyfish)_2023-10-16
+Disable an AMI
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/disable-an-ami.html
+You can disable an AMI to prevent it from being used for instance launches.
+Thu, 12 Oct 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Disable_an_AMI_2023-10-12
+Attached EBS status checks
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-system-instance-status-check.html#attached-ebs-status-checks
+You can use the attached EBS status checks to monitor if the Amazon EBS volumes attached to an instance are reachable.
+Wed, 11 Oct 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Attached_EBS_status_checks_2023-10-11
+Hibernation support for Red Hat Enterprise Linux 9
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hibernating-prerequisites.html#hibernation-prereqs-supported-amis
+Hibernate your newly-launched instances that were launched from the Red Hat Enterprise
+Linux 9 AMI.
+Mon, 2 Oct 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Hibernation_support_for_Red_Hat_Enterprise_Linux_9_2023-10-02
+Hibernation support for Microsoft Windows Server 2022
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hibernating-prerequisites.html#hibernation-prereqs-supported-amis
+Hibernate your newly-launched instances that were launched from the Microsoft Windows
+Server 2022 AMI.
+Mon, 2 Oct 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Hibernation_support_for_Microsoft_Windows_Server_2022_2023-10-02
+Hibernation support for AL2023
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hibernating-prerequisites.html#hibernation-prereqs-supported-amis
+Hibernate your newly-launched instances that were launched from the AL2023 AMI.
+Mon, 2 Oct 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Hibernation_support_for_AL2023_2023-10-02
+Initiate interruption of Spot Instances in a Spot Fleet
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/initiate-a-spot-instance-interruption.html
+You can select a Spot Fleet in the Amazon EC2 console and initiate an interruption of Spot Instances in the
+fleet so that you can test how the applications on your Spot Instances handle being
+interrupted.
+Thu, 21 Sep 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Initiate_interruption_of_Spot_Instances_in_a_Spot_Fleet_2023-09-21
+Block public access to AMIs
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/sharingamis-intro.html#block-public-access-to-amis
+You can enable <em>block public access for AMIs</em> at the
+account level to block any attempts to make your AMIs public.
+Tue, 12 Sep 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Block_public_access_to_AMIs_2023-09-12
+Hibernation support for M7i and M7i-flex
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hibernating-prerequisites.html#hibernation-prereqs-supported-instance-families
+Hibernate your newly-launched instances running on M7i and M7i-flex instance types.
+Tue, 22 Aug 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Hibernation_support_for_M7i_and_M7i-flex_2023-08-22
+EC2-Classic has been deprecated
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/DocumentHistory.html
+With EC2-Classic, EC2 instances ran in a single, flat network shared with other customers.
+Amazon VPC replaces EC2-Classic. With Amazon VPC, your instances run in a
+virtual private cloud (VPC) that's logically isolated to your AWS
+account.
+Tue, 8 Aug 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#EC2-Classic_has_been_deprecated_2023-08-08
+Dedicated Hosts
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dh-outposts.html
+You can allocate Dedicated Hosts on specific hardware assets on an Outpost.
+Tue, 20 Jun 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Dedicated_Hosts_2023-06-20
+EC2 Instance Connect Endpoint
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-with-ec2-instance-connect-endpoint.html
+You can now connect to an instance via SSH or RDP without requiring the instance to have a public IPv4 address.
+Tue, 13 Jun 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#EC2_Instance_Connect_Endpoint_2023-06-13
+IMDS Package Analyzer
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-instance-metadata-service.html#instance-metadata-transition-to-version-2
+You can now use the IMDS Packet Analyzer to identify sources of IMDSv1 calls on your EC2 instances.
+Thu, 1 Jun 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#IMDS_Package_Analyzer_2023-06-01
+EC2 Serial Console bare metal instances
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-serial-console-prerequisites.html#sc-prereqs-instance-types
+The EC2 serial console now supports connectivity to the serial port of selected bare metal instances.
+Tue, 11 Apr 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#EC2_Serial_Console_bare_metal_instances_2023-04-11
+Launch template quotas
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/launch-template-restrictions.html
+You can now view your quotas for launch templates and launch template versions
+in the Service Quotas console and by using the Service Quotas CLI.
+Mon, 3 Apr 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Launch_template_quotas_2023-04-03
+Capacity Reservation utilization notifications
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitor-cr-utilization.html
+AWS Health now sends notifications when capacity utilization for Capacity Reservations in your account
+drops below 20 percent.
+Mon, 3 Apr 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Capacity_Reservation_utilization_notifications_2023-04-03
+Capacity Reservation groups
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-cr-group.html
+You can now add Capacity Reservations that are shared with you to Capacity Reservation groups that you own.
+Thu, 30 Mar 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Capacity_Reservation_groups_2023-03-30
+Modify instance metadata options
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-existing-instances.html
+You can now use the Amazon EC2 console to modify instance metadata options.
+Mon, 20 Mar 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Modify_instance_metadata_options_2023-03-20
+In-place macOS operating system updates
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html#mac2
+You can now perform in-place Apple macOS operating system updates on M1 Mac
+instances.
+Tue, 14 Mar 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#In-place_macOS_operating_system_updates_2023-03-14
+UEFI preferred
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/set-ami-boot-mode.html
+You can now create a single AMI that supports both Unified Extensible Firmware Interface (UEFI) and Legacy BIOS boot modes.
+Fri, 3 Mar 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#UEFI_preferred_2023-03-03
+Modify an AMI for IMDSv2
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-new-instances.html#configure-IMDS-new-instances-ami-configuration
+Modify your existing AMI so that instances launched from the AMI require IMDSv2 by default.
+Tue, 28 Feb 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Modify_an_AMI_for_IMDSv2_2023-02-28
+Windows Virtualization-based security - Credential Guard
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/credential-guard.html
+You can enable Credential Guard, a Virtualization-based security (VBS) feature, on
+supported Amazon EC2 instances.
+Tue, 31 Jan 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Windows_Virtualization-based_security_-_Credential_Guard_2023-01-31
+AMI alias in launch templates
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-launch-template.html#use-an-ssm-parameter-instead-of-an-ami-id
+You can specify an AWS Systems Manager parameter instead of the AMI ID in your launch templates to avoid having to update
+the templates every time the AMI ID changes.
+Thu, 19 Jan 2023 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#AMI_alias_in_launch_templates_2023-01-19
+Hibernation support for C6i, I3en, and M6i
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hibernating-prerequisites.html#hibernation-prereqs-supported-instance-families
+Hibernate your newly-launched instances running on C6i, I3en, and M6i instance types.
+Mon, 19 Dec 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Hibernation_support_for_C6i,_I3en,_and_M6i_2022-12-19
+Torn write prevention
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/storage-twp.html
+Improve the performance of your I/O-intensive relational database workloads and reduce latency without negatively
+impacting data resiliency with torn write prevention, a block storage feature.
+Tue, 29 Nov 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Torn_write_prevention_2022-11-29
+ENA Express
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ena-express.html
+Increase throughput and minimize tail latency of network traffic between EC2 instances
+with ENA Express.
+Mon, 28 Nov 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#ENA_Express_2022-11-28
+Copy AMI tags
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/CopyingAMIs.html#ami-copy-steps
+When you copy an AMI, you can copy your user-defined AMI tags at the same time.
+Fri, 18 Nov 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Copy_AMI_tags_2022-11-18
+AMI size for store and restore
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-store-restore.html#limitations
+The size of an AMI (before compression) that can be stored and restored to and from an Amazon S3 bucket can now be up to 5,000 GB.
+Wed, 16 Nov 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#AMI_size_for_store_and_restore_2022-11-16
+priceCapacityOptimized allocation strategy for Spot Instances
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-allocation-strategy.html
+A Spot Fleet that uses the <code class="code">priceCapacityOptimized</code> allocation strategy looks at both
+price and capacity to select the Spot Instances pools that are the least likely to be
+interrupted and have the lowest possible price.
+Thu, 10 Nov 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#priceCapacityOptimized_allocation_strategy_for_Spot_Instances_2022-11-10
+price-capacity-optimized allocation strategy for Spot Instances
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-allocation-strategy.html
+An EC2 Fleet that uses the <code class="code">price-capacity-optimized</code> allocation strategy looks at both price and capacity to
+select the Spot Instances pools that are the least likely to be interrupted and have the lowest possible price.
+Thu, 10 Nov 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#price-capacity-optimized_allocation_strategy_for_Spot_Instances_2022-11-10
+Cancel having an AMI shared with your account
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/cancel-sharing-an-AMI.html
+If an AMI has been shared with your AWS account and you no longer want it shared with your account,
+you can remove your account from the AMI's launch permissions.
+Fri, 4 Nov 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Cancel_having_an_AMI_shared_with_your_account_2022-11-04
+Transfer Elastic IP addresses
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html#transfer-EIPs-intro-ec2
+You can now transfer Elastic IP addresses from one AWS account to another.
+Mon, 31 Oct 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Transfer_Elastic_IP_addresses_2022-10-31
+Replace root volume
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/replace-root.html
+You can replace the root Amazon EBS volume for a running instance using an AMI.
+Thu, 27 Oct 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Replace_root_volume_2022-10-27
+Automatically connect instance to database
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/tutorial-connect-ec2-instance-to-rds-database.html
+Use the automatic connection feature to quickly connect one or more EC2 instances to an RDS database to allow traffic between them.
+Mon, 10 Oct 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Automatically_connect_instance_to_database_2022-10-10
+AMI quotas
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-quotas.html
+Quotas now apply to creating and sharing AMIs.
+Mon, 10 Oct 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#AMI_quotas_2022-10-10
+Configure AMI for IMDSv2
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-new-instances.html#configure-IMDS-new-instances-ami-configuration
+Configure your AMI so that instances launched from the AMI require IMDSv2 by default.
+Mon, 3 Oct 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Configure_AMI_for_IMDSv2_2022-10-03
+Initiate Spot Instance interruption
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/initiate-a-spot-instance-interruption.html
+You can select a Spot Instance in the Amazon EC2 console and initiate an interruption
+so that you can test how the applications on your Spot Instances handle being interrupted.
+Mon, 26 Sep 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Initiate_Spot_Instance_interruption_2022-09-26
+Verified AMI provider
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/sharing-amis.html#verified-ami-provider
+In the Amazon EC2 console, public AMIs that are owned by Amazon or a verified Amazon partner are marked <b>Verified provider</b>.
+Fri, 22 Jul 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Verified_AMI_provider_2022-07-22
+Placement groups on AWS Outposts
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups-outpost.html
+Added a host spread strategy for placement groups on an Outpost.
+Thu, 30 Jun 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Placement_groups_on_AWS_Outposts_2022-06-30
+Dedicated Hosts on AWS Outposts
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dh-outposts.html
+You can allocate Dedicated Hosts on AWS Outposts.
+Tue, 31 May 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Dedicated_Hosts_on_AWS_Outposts_2022-05-31
+Instance stop protection
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-stop-protection.html
+To prevent your instance from being accidentally stopped, you can enable stop protection for the instance.
+Tue, 24 May 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Instance_stop_protection_2022-05-24
+UEFI Secure Boot
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/uefi-secure-boot.html
+UEFI Secure Boot builds on the long-standing secure boot process of Amazon EC2
+and provides additional defense-in-depth that helps customers secure software
+from threats that persist across reboots.
+Tue, 10 May 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#UEFI_Secure_Boot_2022-05-10
+NitroTPM
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nitrotpm.html
+Nitro Trusted Platform Module (NitroTPM) is a virtual device that is
+provided by the AWS Nitro System and conforms to the TPM 2.0 specification.
+Tue, 10 May 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#NitroTPM_2022-05-10
+AMI state change events
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitor-ami-events.html
+Amazon EC2 now generates an event when an AMI changes state. You can use Amazon EventBridge to detect and react to these events.
+Mon, 9 May 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#AMI_state_change_events_2022-05-09
+Describe public keys
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/describe-keys.html
+You can query the public key and creation date of an Amazon EC2 key pair.
+Thu, 28 Apr 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Describe_public_keys_2022-04-28
+Create key pairs
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-key-pairs.html#having-ec2-create-your-key-pair
+You can specify the key format
+(PEM or PPK) when creating a new key pair.
+Thu, 28 Apr 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Create_key_pairs_2022-04-28
+Mount Amazon FSx file systems at launch
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/storage_fsx.html
+You can mount a new or existing Amazon FSx for NetApp ONTAP or Amazon FSx for OpenZFS file system at launch using the new launch instance wizard.
+Tue, 12 Apr 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Mount_Amazon_FSx_file_systems_at_launch_2022-04-12
+New launch instance wizard
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-launch-instance-wizard.html
+A new and improved launch experience in the Amazon EC2 console, providing a quicker and easier way to launch an EC2 instance.
+Tue, 5 Apr 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#New_launch_instance_wizard_2022-04-05
+Automatically deprecate public AMIs
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/sharingamis-intro.html#considerations-for-sharing-public-AMIs
+By default, the deprecation date of all public AMIs is set to two years from the AMI creation date.
+Thu, 31 Mar 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Automatically_deprecate_public_AMIs_2022-03-31
+Instance metadata category: autoscaling/target-lifecycle-state
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html#instancedata-data-categories
+When using Auto Scaling groups, you can access an instance's target lifecycle state from the instance metadata.
+Thu, 24 Mar 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Instance_metadata_category:_autoscaling/target-lifecycle-state_2022-03-24
+AMI last launched time
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-deprecate.html#ami-last-launched-time
+The <code class="code">lastLaunchedTime</code> indicates when your AMI was last used to launch an instance.
+Mon, 28 Feb 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#AMI_last_launched_time_2022-02-28
+ED25519 keys
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html
+ED25519 keys are now supported for EC2 Instance Connect and EC2 Serial Console.
+Thu, 20 Jan 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#ED25519_keys_2022-01-20
+Additional RHEL platforms for Capacity Reservations
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-reservations.html#capacity-reservations-platforms
+Additional Red Hat Enterprise Linux platforms for On-Demand Capacity Reservations.
+Tue, 11 Jan 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Additional_RHEL_platforms_for_Capacity_Reservations_2022-01-11
+Configure Windows AMIs for faster launching
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/win-ami-config-fast-launch.html
+Configure Windows AMIs to launch instances up to 65% faster, using
+pre-provisioned snapshots.
+Mon, 10 Jan 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Configure_Windows_AMIs_for_faster_launching_2022-01-10
+Instance tags in instance metadata
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html#work-with-tags-in-IMDS
+You can access an instance's tags from the instance metadata.
+Thu, 6 Jan 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Instance_tags_in_instance_metadata_2022-01-06
+Capacity Reservations in cluster placement groups
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/cr-cpg.html
+You can create Capacity Reservations in cluster placement groups.
+Thu, 6 Jan 2022 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Capacity_Reservations_in_cluster_placement_groups_2022-01-06
+Spot Fleet launch-before-terminate
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-capacity-rebalance.html
+Spot Fleet can terminate the Spot Instances that receive a rebalance notification after new replacement
+Spot Instances are launched.
+Thu, 4 Nov 2021 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Spot_Fleet_launch-before-terminate_2021-11-04
+EC2 Fleet launch-before-terminate
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-capacity-rebalance.html
+EC2 Fleet can terminate the Spot Instances that receive a rebalance notification after new replacement
+Spot Instances are launched.
+Thu, 4 Nov 2021 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#EC2_Fleet_launch-before-terminate_2021-11-04
+Compare timestamps
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/set-time.html#compare-timestamps-with-clockbound
+You can determine the true time of an event by comparing the timestamp of your Amazon EC2 Linux
+instance with ClockBound.
+Tue, 2 Nov 2021 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Compare_timestamps_2021-11-02
+Share AMIs with organizations and OUs
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/share-amis-with-organizations-and-OUs.html
+You can now share AMIs with the following AWS resources: organizations and organizational units (OUs).
+Fri, 29 Oct 2021 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Share_AMIs_with_organizations_and_OUs_2021-10-29
+Spot placement score
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-placement-score.html
+Get a recommendation for an AWS Region or Availability Zone based on your Spot capacity requirements.
+Wed, 27 Oct 2021 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Spot_placement_score_2021-10-27
+Attribute-based instance type selection for Spot Fleet
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-attribute-based-instance-type-selection.html
+Specify the attributes that an instance must have, and Amazon EC2 will
+identify all the instance types with those attributes.
+Wed, 27 Oct 2021 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Attribute-based_instance_type_selection_for_Spot_Fleet_2021-10-27
+Attribute-based instance type selection for EC2 Fleet
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-attribute-based-instance-type-selection.html
+Specify the attributes that an instance must have, and Amazon EC2 will
+identify all the instance types with those attributes.
+Wed, 27 Oct 2021 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Attribute-based_instance_type_selection_for_EC2_Fleet_2021-10-27
+On-Demand Capacity Reservation Fleet
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/cr-fleets.html
+You can use a Capacity Reservation Fleet to launch a group, or fleet, of Capacity Reservations.
+Tue, 5 Oct 2021 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#On-Demand_Capacity_Reservation_Fleet_2021-10-05
+Hibernation support for Ubuntu 20.04 LTS - Focal
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hibernating-prerequisites.html#hibernation-prereqs-supported-amis
+Hibernate your newly-launched instances that were launched from the Ubuntu 20.04 LTS - Focal AMI.
+Mon, 4 Oct 2021 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Hibernation_support_for_Ubuntu_20.04_LTS_-_Focal_2021-10-04
+EC2 Fleet and targeted On-Demand Capacity Reservations
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-on-demand-capacity-reservations.html
+EC2 Fleet can launch On-Demand Instances into <code class="code">targeted</code> Capacity Reservations.
+Wed, 22 Sep 2021 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#EC2_Fleet_and_targeted_On-Demand_Capacity_Reservations_2021-09-22
+T3 instances on Dedicated Hosts
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-overview.html#burstable-t3
+Support for T3 instances on Amazon EC2 Dedicated Host.
+Tue, 14 Sep 2021 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#T3_instances_on_Dedicated_Hosts_2021-09-14
+Hibernation support for RHEL, Fedora, and CentOS
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hibernating-prerequisites.html#hibernation-prereqs-supported-amis
+Hibernate your newly-launched instances that were launched from RHEL, Fedora, and CentOS AMIs.
+Thu, 9 Sep 2021 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Hibernation_support_for_RHEL,_Fedora,_and_CentOS_2021-09-09
+Amazon EC2 Global View
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Filtering.html#global-view
+Amazon EC2 Global View enables you to view VPCs, subnets, instances, security groups, and volumes across
+multiple AWS Regions in a single console.
+Wed, 1 Sep 2021 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Amazon_EC2_Global_View_2021-09-01
+Hibernation support for C5d, M5d, and R5d
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Hibernate.html#hibernating-prerequisites
+Hibernate your newly-launched instances running on C5d, M5d, and R5d instance types.
+Thu, 19 Aug 2021 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Hibernation_support_for_C5d,_M5d,_and_R5d_2021-08-19
+Amazon EC2 key pairs
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html
+Amazon EC2 now supports ED25519 keys on Linux and Mac instances.
+Tue, 17 Aug 2021 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Amazon_EC2_key_pairs_2021-08-17
+Prefixes for network interfaces
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-prefix-eni.html
+You can assign a private IPv4 or IPv6 CIDR range, either automatically or manually, to your
+network interfaces.
+Thu, 22 Jul 2021 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Prefixes_for_network_interfaces_2021-07-22
+Event windows
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/event-windows.html
+You can define custom, weekly-recurring event windows for scheduled events that reboot, stop, or terminate your Amazon EC2 instances.
+Thu, 15 Jul 2021 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Event_windows_2021-07-15
+Resource IDs and tagging support for security group rules
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/DocumentHistory.html
+You can refer to security group rules by resource ID. You can also add tags to your
+security group rules.
+Wed, 7 Jul 2021 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Resource_IDs_and_tagging_support_for_security_group_rules_2021-07-07
+Deprecate an AMI
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-deprecate.html
+You can now specify when an AMI is deprecated.
+Fri, 11 Jun 2021 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Deprecate_an_AMI_2021-06-11
+Windows per-second billing
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/DocumentHistory.html
+Amazon EC2 charges for Windows- and SQL Server-based usage by the second, with a one-minute minimum charge.
+Thu, 10 Jun 2021 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Windows_per-second_billing_2021-06-10
+Capacity Reservations on AWS Outposts
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reservations-outposts.html
+You can now use Capacity Reservations on AWS Outposts.
+Mon, 24 May 2021 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Capacity_Reservations_on_AWS_Outposts_2021-05-24
+Capacity Reservation sharing
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reservation-sharing.html
+You can now share Capacity Reservations created in Local Zones and Wavelength Zones.
+Mon, 24 May 2021 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Capacity_Reservation_sharing_2021-05-24
+Root volume replacement
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/replace-root.html
+You can now use root volume replacement tasks to replace the root EBS volume for running
+instances.
+Thu, 22 Apr 2021 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Root_volume_replacement_2021-04-22
+Store and restore an AMI using S3
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-store-restore.html
+Store EBS-backed AMIs in S3 and restore them from S3 to enable cross-partition copying of AMIs.
+Tue, 6 Apr 2021 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Store_and_restore_an_AMI_using_S3_2021-04-06
+EC2 Serial Console
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-serial-console.html
+Troubleshoot boot and network connectivity issues by establishing a connection to the serial port of an instance.
+Tue, 30 Mar 2021 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#EC2_Serial_Console_2021-03-30
+Boot modes
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-boot.html
+Amazon EC2 now supports UEFI boot on selected AMD- and Intel-based EC2 instances.
+Mon, 22 Mar 2021 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Boot_modes_2021-03-22
+Create a reverse DNS record
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html#Using_Elastic_Addressing_Reverse_DNS
+You can now set up reverse DNS lookup for your Elastic IP addresses.
+Wed, 3 Feb 2021 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Create_a_reverse_DNS_record_2021-02-03
+Tag AMIs and snapshots on AMI creation
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/creating-an-ami-ebs.html#how-to-create-ebs-ami
+When you create an AMI, you can tag the AMI and the snapshots with the same tags, or you
+can tag them with different tags.
+Fri, 4 Dec 2020 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Tag_AMIs_and_snapshots_on_AMI_creation_2020-12-04
+Use Amazon EventBridge to monitor Spot Fleet events
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitor-ec2-fleet-using-eventbridge.html
+Create EventBridge rules that trigger programmatic actions in response to Spot Fleet state changes and
+errors.
+Fri, 20 Nov 2020 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Use_Amazon_EventBridge_to_monitor_Spot_Fleet_events_2020-11-20
+Use Amazon EventBridge to monitor EC2 Fleet events
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitor-ec2-fleet-using-eventbridge.html
+Create EventBridge rules that trigger programmatic actions in response to EC2 Fleet state changes and
+errors.
+Fri, 20 Nov 2020 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Use_Amazon_EventBridge_to_monitor_EC2_Fleet_events_2020-11-20
+Delete instant fleets
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/manage-ec2-fleet.html#delete-fleet
+Delete an EC2 Fleet of type <code class="code">instant</code> and terminate all the instances in the fleet
+in a single API call.
+Wed, 18 Nov 2020 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Delete_instant_fleets_2020-11-18
+Hibernation support for T3 and T3a
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Hibernate.html#hibernating-prerequisites
+Hibernate your newly-launched instances running on T3 and T3a instance types.
+Tue, 17 Nov 2020 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Hibernation_support_for_T3_and_T3a_2020-11-17
+Amazon EFS Quick Create
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEFS.html#quick-create
+You can create and mount an Amazon EFS file system to an instance at launch
+using Amazon EFS Quick Create.
+Mon, 9 Nov 2020 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Amazon_EFS_Quick_Create_2020-11-09
+Instance metadata category: events/recommendations/rebalance
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html#instancedata-data-categories
+The approximate time, in UTC, when the EC2 instance rebalance recommendation notification
+is emitted for the instance.
+Wed, 4 Nov 2020 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Instance_metadata_category:_events/recommendations/rebalance_2020-11-04
+EC2 instance rebalance recommendation
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/rebalance-recommendations.html
+A signal that notifies you when a Spot Instance is at elevated risk of interruption.
+Wed, 4 Nov 2020 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#EC2_instance_rebalance_recommendation_2020-11-04
+Capacity Reservations in Wavelength Zones
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reservations-wavelengthzones.html
+Capacity Reservations can now be created and used in Wavelength Zones.
+Wed, 4 Nov 2020 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Capacity_Reservations_in_Wavelength_Zones_2020-11-04
+Capacity Rebalancing
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-capacity-rebalance.html
+Configure Spot Fleet or EC2 Fleet to launch a replacement Spot Instance when Amazon EC2 emits a rebalance
+recommendation.
+Wed, 4 Nov 2020 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Capacity_Rebalancing_2020-11-04
+Hibernation support for I3, M5ad, and R5ad
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Hibernate.html#hibernating-prerequisites
+Hibernate your newly-launched instances running on I3, M5ad, and R5ad instance
+types.
+Wed, 21 Oct 2020 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Hibernation_support_for_I3,_M5ad,_and_R5ad_2020-10-21
+Spot Instance vCPU limits
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-limits.html
+Spot Instance limits are now managed in terms of the number of vCPUs that your running Spot Instances are either using or will use pending the fulfillment of open requests.
+Thu, 1 Oct 2020 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Spot_Instance_vCPU_limits_2020-10-01
+Capacity Reservations in Local Zones
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reservations-localzones.html
+Capacity Reservations can now be created and used in Local Zones.
+Wed, 30 Sep 2020 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Capacity_Reservations_in_Local_Zones_2020-09-30
+Hibernation support for M5a and R5a
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Hibernate.html#hibernating-prerequisites
+Hibernate your newly-launched instances running on M5a and R5a instance types.
+Fri, 28 Aug 2020 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Hibernation_support_for_M5a_and_R5a_2020-08-28
+Instance metadata provides instance location and placement information
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html#instancedata-data-categories
+New instance metadata fields under the <code class="code">placement</code> category: Region, placement group name,
+partition number, host ID, and Availability Zone ID.
+Mon, 24 Aug 2020 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Instance_metadata_provides_instance_location_and_placement_information_2020-08-24
+Capacity Reservation groups
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-cr-group.html
+You can use AWS Resource Groups to create logical collections of Capacity Reservations,
+and then target instance launches into those groups.
+Wed, 29 Jul 2020 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Capacity_Reservation_groups_2020-07-29
+EC2Launch v2
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-v2.html
+You can use EC2Launch v2 to perform tasks during instance startup, if an instance
+is stopped and later started, if an instance is restarted, and on demand.
+EC2Launch v2 supports all versions of Windows Server and replaces EC2Launch and
+EC2Config.
+Tue, 30 Jun 2020 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#EC2Launch_v2__2020-06-30
+Bring your own IPv6 addresses
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-byoip.html
+You can bring part or all of your IPv6 address range from your on-premises network
+to your AWS account.
+Thu, 21 May 2020 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Bring_your_own_IPv6_addresses_2020-05-21
+Launch instances using a Systems Manager parameter
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/finding-an-ami.html#using-systems-manager-parameter-to-find-AMI
+You can specify a AWS Systems Manager parameter instead of an AMI when you launch an instance.
+Tue, 5 May 2020 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Launch_instances_using_a_Systems_Manager_parameter_2020-05-05
+Customize scheduled event notifications
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-instances-status-check_sched.html#customizing_scheduled_event_notifications
+You can customize scheduled event notifications to include tags in the email notification.
+Mon, 4 May 2020 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Customize_scheduled_event_notifications_2020-05-04
+Windows Server on Dedicated Hosts
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-overview.html
+You can use Windows Server AMIs provided by Amazon to run the latest versions of Windows
+Server on Dedicated Hosts.
+Tue, 7 Apr 2020 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Windows_Server_on_Dedicated_Hosts_2020-04-07
+Stop and start a Spot Instance
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-requests.html#stopping-a-spot-instance
+Stop your Spot Instances backed by Amazon EBS and start them at will, instead of relying on the
+stop interruption behavior.
+Mon, 13 Jan 2020 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Stop_and_start_a_Spot_Instance_2020-01-13
+Resource tagging
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/DocumentHistory.html
+You can tag egress-only internet gateways, local gateways, local gateway route tables, local
+gateway virtual interfaces, local gateway virtual interface groups, local gateway route table
+VPC associations, and local gateway route table virtual interface group associations.
+Fri, 10 Jan 2020 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Resource_tagging_2020-01-10
+Connect to your instance using Session Manager
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-with-systems-manager-session-manager.html
+You can start a Session Manager session with an instance from the Amazon EC2 console.
+Wed, 18 Dec 2019 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Connect_to_your_instance_using_Session_Manager_2019-12-18
+Dedicated Hosts and host resource groups
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/launching-hrg-instances.html
+Dedicated Hosts can now be used with host resource groups.
+Mon, 2 Dec 2019 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Dedicated_Hosts_and_host_resource_groups_2019-12-02
+Dedicated Host sharing
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dh-sharing.html
+You can now share your Dedicated Hosts across AWS accounts.
+Mon, 2 Dec 2019 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Dedicated_Host_sharing_2019-12-02
+Default credit specification at the account level
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/burstable-performance-instances-how-to.html#burstable-performance-instance-set-default-credit-specification-for-account
+You can set the default credit specification per burstable performance instance family
+at the account level per AWS Region.
+Mon, 25 Nov 2019 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Default_credit_specification_at_the_account_level_2019-11-25
+Instance type discovery
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-discovery.html
+You can find an instance type that meets your needs.
+Fri, 22 Nov 2019 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Instance_type_discovery_2019-11-22
+Dedicated Hosts
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/DocumentHistory.html
+You can now configure a Dedicated Host to support multiple instance types in an
+instance family.
+Thu, 21 Nov 2019 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Dedicated_Hosts_2019-11-21
+Instance Metadata Service Version 2
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-instance-metadata-service.html
+You can use Instance Metadata Service Version 2, which is a session-oriented method for requesting instance
+metadata.
+Tue, 19 Nov 2019 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Instance_Metadata_Service_Version_2_2019-11-19
+Elastic Fabric Adapter
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/DocumentHistory.html
+Elastic Fabric Adapters can now be used with Intel MPI 2019 Update 6.
+Fri, 15 Nov 2019 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Elastic_Fabric_Adapter_2019-11-15
+Hibernation support for On-Demand Windows instances
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Hibernate.html#hibernating-prerequisites
+You can hibernate On-Demand Windows instances.
+Mon, 14 Oct 2019 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Hibernation_support_for_On-Demand_Windows_instances_2019-10-14
+Queued purchases of Reserved Instances
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ri-market-concepts-buying.html#ri-queued-purchase
+You can queue the purchase of a Reserved Instance up to three years in advance.
+Fri, 4 Oct 2019 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Queued_purchases_of_Reserved_Instances_2019-10-04
+Diagnostic interrupt
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/diagnostic-interrupt.html
+You can send a diagnostic interrupt to an unreachable or unresponsive instance
+to trigger a kernel panic.
+Wed, 14 Aug 2019 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Diagnostic_interrupt_2019-08-14
+Capacity optimized allocation strategy
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-configuration-strategies.html#ec2-fleet-strategy-capacity-optimized
+Using EC2 Fleet or Spot Fleet, you can launch Spot Instances from Spot pools with optimal capacity for the
+number of instances that are launching.
+Mon, 12 Aug 2019 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Capacity_optimized_allocation_strategy_2019-08-12
+On-Demand Capacity Reservation sharing
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reservation-sharing.html
+You can now share your Capacity Reservations across AWS accounts.
+Mon, 29 Jul 2019 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#On-Demand_Capacity_Reservation_sharing_2019-07-29
+Elastic Fabric Adapter
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/DocumentHistory.html
+EFA now supports Open MPI 3.1.4 and Intel MPI 2019 Update 4.
+Fri, 26 Jul 2019 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Elastic_Fabric_Adapter_2019-07-26
+EC2 Instance Connect
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-linux-inst-eic.html
+EC2 Instance Connect is a simple and secure way to connect to your instances
+using Secure Shell (SSH).
+Thu, 27 Jun 2019 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#EC2_Instance_Connect_2019-06-27
+Host recovery
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-recovery.html
+Automatically restart your instances on a new host in the event of an unexpected
+hardware failure on a Dedicated Host.
+Wed, 5 Jun 2019 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Host_recovery_2019-06-05
+VSS application-consistent snapshots
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/application-consistent-snapshots.html
+Take application-consistent snapshots of all Amazon EBS volumes attached to your
+Windows instances using AWS Systems Manager Run Command.
+Mon, 13 May 2019 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#VSS_application-consistent_snapshots_2019-05-13
+Windows to Linux Replatforming Assistant for Microsoft SQL Server Databases
+https://docs.aws.amazon.com/sql-server-ec2/latest/userguide/replatform-sql-server.html
+Move existing Microsoft SQL Server workloads from a Windows to a Linux operating system.
+Updated link points to the Microsoft SQL Server on Amazon EC2 User Guide.
+Wed, 8 May 2019 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Windows_to_Linux_Replatforming_Assistant_for_Microsoft_SQL_Server_Databases_2019-05-08
+Windows Automated Upgrade
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/automated-upgrades.html
+Perform automated upgrades of EC2 Windows instances using AWS Systems Manager.
+Mon, 6 May 2019 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Windows_Automated_Upgrade_2019-05-06
+Elastic Fabric Adapter
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa-start.html
+You can attach an Elastic Fabric Adapter to your instances to accelerate High Performance Computing (HPC) applications.
+Mon, 29 Apr 2019 19:00:00 GMT
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/#Elastic_Fabric_Adapter_2019-04-29

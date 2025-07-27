@@ -1,0 +1,217 @@
+features
+Skip to main content
+English
+Contact us
+Support
+My account
+Filter: All
+Sign in to console
+Create Account
+Amazon EC2
+Overview
+Features
+Pricing
+Instance Types
+FAQs
+More
+Compute
+›
+Amazon EC2
+›
+Features
+Amazon EC2 features
+Why Amazon EC2?
+Amazon EC2 provides the broadest and deepest instance choice to match your workload’s needs. General purpose, compute optimized, memory optimized, storage optimized, and accelerated computing instance types are available that provide the optimal compute, memory, storage, and networking balance for your workloads. Processors from Intel, AMD, NVIDIA and AWS power these instance types and provide additional performance and cost optimizations. Local storage and enhanced networking options available with instance types further help optimize performance for workloads that are disk or network I/O bound. Many instance types also offer bare metal instances that provide your applications with direct access to the processor and memory of the underlying server for running in non-virtualized environments or for applications where you want to use your own hypervisor. To find the right instance for your workload, visit the
+EC2 instance types
+page. You can also use the
+AWS Compute Optimizer
+to get recommendations on optimal AWS Compute resources for your workloads to reduce costs and improve performance.
+Page topics
+Global Infrastructure
+3
+Cost and Capacity Optimization
+5
+Storage
+1
+Networking
+5
+Operating Systems and Software
+1
+Maintenance
+1
+Intended usage and restrictions
+1
+Global Infrastructure
+Open all
+Multiple Locations
+Amazon EC2 provides the ability to place instances in multiple locations. Amazon EC2 locations are composed of Regions and Availability Zones. Availability Zones are distinct locations that are engineered to be insulated from failures in other Availability Zones and provide inexpensive, low latency network connectivity to other Availability Zones in the same Region. By launching instances in separate Availability Zones, you can protect your applications from failure of a single location. Regions consist of one or more Availability Zones and are geographically dispersed. The Amazon EC2 Service Level Agreement commitment is 99.99% availability for each Amazon EC2 Region. Please refer to
+Regional Products and Services
+for more details of our product and service availability by region.
+High Precision Time with Amazon Time Sync Service
+The Amazon Time Sync Service provides a highly accurate, reliable and available time source to AWS services including EC2 instances. For instructions on how to access the service, see Setting the Time sections of the
+Linux
+and
+Windows
+User Guides.
+Choice of operating systems and software
+Amazon Machine Images (AMIs) are preconfigured with an ever-growing list of operating systems, including
+Microsoft Windows
+and Linux distributions such as
+Amazon Linux 2
+, Ubuntu, Red Hat Enterprise Linux, CentOS, SUSE and Debian. We work with our partners and community to provide you with the most choice possible. The
+AWS Marketplace
+features a wide selection of commercial and free software from well-known vendors, designed to run on your EC2 instances.
+Cost and Capacity Optimization
+Open all
+Pay for What You Use
+With per-second billing, you only pay for what you use. It takes the cost of unused minutes and seconds in an hour off of the bill, so you can focus on improving your applications instead of maximizing usage to the hour.
+Learn more
+about EC2 pricing.
+Scale Seamlessly with Amazon EC2 Auto Scaling
+Amazon EC2 Auto Scaling allows you to automatically scale your Amazon EC2 capacity up or down according to conditions you define. You can use the dynamic and predictive scaling policies within EC2 Auto Scaling to add or remove EC2 instances. Predictive scaling uses machine learning to proactively allocate instances based on anticipated demand, and dynamic scaling allows you to scale compute based on defined metrics. With EC2 Auto Scaling, you can ensure that the number of Amazon EC2 instances you’re using scales up seamlessly during demand spikes to maintain performance, and scales down automatically during demand lulls to minimize costs. See
+Amazon EC2 Auto Scaling
+for more details.
+Optimize Compute Performance and Cost with Amazon EC2 Fleet
+With a single API call, Amazon EC2 Fleet lets you provision compute capacity across EC2 instance types, Availability Zones, and purchase models to help optimize scale, performance and cost. Read FAQs and this AWS
+blog
+to learn more. You can also access EC2 Fleet capabilities via Amazon EC2 Auto Scaling to provision and automatically scale compute capacity across EC2 instance types, Availability Zones, and purchase options in a single Auto Scaling Group.
+Learn more
+.
+Optimized CPU Configurations
+The Optimize CPUs feature gives you greater control of your Amazon EC2 instances on two fronts. First, you can specify a custom number of vCPUs when launching new instances to save on vCPU-based licensing costs. Second, you can disable Intel Hyper-Threading Technology (Intel HT Technology) for workloads that perform well with single-threaded CPUs, such as certain high-performance computing (HPC) applications. To learn more about how Optimize CPUs can help you, visit the Optimize CPUs documentation
+here
+.
+Pause and Resume Your Instances
+You can hibernate your Amazon EC2 instances backed by Amazon EBS, and resume them from this state at a later time. Applications that take a while to bootstrap and persist state into memory (RAM) can benefit from this feature. For more information about hibernation, and supported instance types and operating systems, visit the
+FAQs
+.
+Storage
+Open all
+Optimal storage for every workload
+Different Amazon EC2 workloads can have vastly different storage requirements. Beyond the built-in instance storage, we also offer
+Amazon Elastic Block Store
+(Amazon EBS) and
+Amazon Elastic File System
+(Amazon EFS) to suit other
+cloud storage
+workload requirements. Amazon EBS provides persistent, highly available, consistent, low-latency block storage volumes for use with Amazon EC2 instances, while Amazon EFS provides simple, scalable, persistent, fully managed
+cloud file storage
+for shared access.
+Networking
+Open all
+High Packet-Per-Second Performance and Low Latency with Enhanced Networking
+Enhanced Networking enables you to get significantly higher packet per second (PPS) performance, lower network jitter and lower latencies. This feature uses a network virtualization stack that provides higher I/O performance and lower CPU utilization compared to traditional implementations. For instructions on how to enable Enhanced Networking on EC2 instances, see the
+Enhanced Networking on Linux
+and
+Enhanced Networking on Windows
+tutorials. For
+availability of this feature by instance
+, or to learn more, visit the
+Enhanced Networking FAQ
+section.
+Run High Levels of Inter-Node Communications with Elastic Fabric Adapter
+Elastic Fabric Adapter (EFA) is a network interface for Amazon EC2 instances that enables customers to run applications requiring high levels of inter-instance communications, like machine learning, computational fluid dynamics, weather modeling, and reservoir simulation, at scale on AWS. EFA is available as an optional EC2 networking feature that you can enable on any supported EC2 instance at no additional cost.
+Learn more.
+Manage Dynamic Cloud Computing Services with Elastic IP Addresses
+Elastic IP addresses are static IP addresses designed for dynamic
+cloud computing
+. An Elastic IP address is associated with your account, not with a particular instance, and you control that address until you choose to explicitly release it. Unlike traditional static IP addresses, however, Elastic IP addresses allow you to mask instance or Availability Zone failures by programmatically remapping your public IP addresses to any instance in your account. You can also optionally configure the reverse DNS record of any of your Elastic IP addresses by filling out this
+form
+.
+High Throughput and Low Latency with High Performance Computing (HPC) Clusters
+Customers with complex computational workloads such as tightly coupled parallel processes, or with applications sensitive to network performance, can achieve the same high compute and network performance provided by custom-built infrastructure while benefiting from the elasticity, flexibility and cost advantages of Amazon EC2. Cluster Compute, Cluster GPU, and High Memory Cluster instances have been specifically engineered to provide high-performance network capability and can be programmatically launched into clusters – allowing applications to get the low-latency network performance required for tightly coupled, node-to-node communication. Cluster instances also provide significantly increased throughput making them well suited for customer applications that need to perform network-intensive operations.
+Learn more about how Amazon EC2 and other AWS services can be used for HPC Applications
+.
+Access Services Hosted on AWS Easily and Securely with AWS PrivateLink
+AWS PrivateLink is a purpose-built technology designed for customers to access Amazon services in a highly performant and highly available manner, while keeping all the network traffic within the AWS network. Learn more about
+AWS PrivateLink
+.
+Operating Systems and Software
+Open all
+Growing list of operating systems and software
+Amazon Machine Images (AMIs) are preconfigured with an ever-growing list of operating systems, including
+Microsoft Windows
+and Linux distributions such as
+Amazon Linux 2
+, Ubuntu, Red Hat Enterprise Linux,
+CentOS,
+SUSE and
+Debian
+. We work with our partners and community to provide you with the most choice possible. The
+AWS Marketplace
+features a wide selection of commercial and free software from well-known vendors, designed to run on your EC2 instances.
+Maintenance
+Open all
+Improving application uptime and reducing operation effort
+AWS regularly performs routine hardware, software, power, and network maintenance with minimal disruption across all EC2 instance types. This is achieved by a combination of technologies and methods across the entire AWS Global infrastructure, such as live update and live migration as well as redundant and concurrently maintainable systems. Non-intrusive maintenance technologies such as live update and live migration do not require instances to be stopped or rebooted. Customers are not required to take any action prior to, during or after live migration or live update. These technologies help improve application uptime and reduce your operational effort. Amazon EC2 uses live update to deploy software to servers quickly with minimal impact to customer instances. Live update ensures that customers’ workloads run on servers with software that is up-to-date with security patches, new instance features and performance improvements. Amazon EC2 uses live migration when running instances need to be moved from one server to another for hardware maintenance or to optimize placement of instances or to dynamically manage CPU resources. Amazon EC2 has been expanding the scope and coverage of non-intrusive maintenance technologies over the years so that scheduled maintenance events are a fallback option rather than the primary means of enabling routine maintenance.
+Intended usage and restrictions
+Open all
+Customer agreement
+Your use of this service is subject to the
+Amazon Web Services Customer Agreement
+.
+Next Steps
+Instance types
+Explore instance types
+Learn more
+Free tier
+Instantly get access to the AWS Free Tier
+Sign up for a free account
+Getting started
+Get started building with Amazon EC2 in the AWS Console
+Start building in the console
+Did you find what you were looking for today?
+Let us know so we can improve the quality of the content on our pages
+Yes
+No
+Create an AWS account
+Learn
+What Is AWS?
+What Is Cloud Computing?
+What Is Agentic AI?
+Cloud Computing Concepts Hub
+AWS Cloud Security
+What's New
+Blogs
+Press Releases
+Resources
+Getting Started
+Training
+AWS Trust Center
+AWS Solutions Library
+Architecture Center
+Product and Technical FAQs
+Analyst Reports
+AWS Partners
+Developers
+Builder Center
+SDKs & Tools
+.NET on AWS
+Python on AWS
+Java on AWS
+PHP on AWS
+JavaScript on AWS
+Help
+Contact Us
+File a Support Ticket
+AWS re:Post
+Knowledge Center
+AWS Support Overview
+Get Expert Help
+AWS Accessibility
+Legal
+English
+Back to top
+Amazon is an Equal Opportunity Employer: Minority / Women / Disability / Veteran / Gender Identity / Sexual Orientation / Age.
+x
+facebook
+linkedin
+instagram
+twitch
+youtube
+podcasts
+email
+Privacy
+Site terms
+Cookie Preferences
+© 2025, Amazon Web Services, Inc. or its affiliates. All rights reserved.
