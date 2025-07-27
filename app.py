@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, request, send_from_directory
 from flask_cors import CORS
 import os
-from langchain_chroma import Chroma
+from langchain_community.vectorstores import Chroma
 from langchain_community.chat_models import ChatOllama
 from langchain.chains import RetrievalQA
 from langchain_ollama import OllamaEmbeddings
