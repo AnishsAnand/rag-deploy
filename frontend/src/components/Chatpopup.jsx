@@ -79,10 +79,6 @@ function ChatPopup() {
             {messages.map((msg, idx) => (
               <div key={idx} className={`chat-message ${msg.role}`}>
                 <div>{msg.content}</div>
-                {msg.role === "bot" && (
-                  <div style={{ fontSize: "12px", marginTop: "4px" }}>
-                    Confidence: {msg.confidence}% | Sentiment:{" "}
-                    {msg.sentiment}
                   </div>
                 )}
               </div>
