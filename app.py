@@ -10,7 +10,6 @@ import sqlite3
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 
-# Set static folder for serving frontend
 app = Flask(__name__, static_folder="static", static_url_path="")
 CORS(app)
 
@@ -27,7 +26,6 @@ def create_qa_chain():
 
 qa_chain = create_qa_chain()
 
-# --- Serve PWA static assets ---
 @app.route("/")
 def serve_index():
     return send_from_directory(app.static_folder, "index.html")
@@ -44,7 +42,6 @@ def service_worker():
 def icons(filename):
     return send_from_directory(os.path.join(app.static_folder, "icons"), filename)
 
-# --- RAG Chatbot logic ---
 @app.route("/ask", methods=["POST"])
 def ask():
     data = request.get_json()
@@ -75,7 +72,6 @@ def ask():
         "sentiment": sentiment
     })
 
-# --- Feedback API ---
 @app.route("/feedback", methods=["POST"])
 def feedback():
     data = request.get_json()
@@ -94,11 +90,9 @@ def feedback():
     conn.close()
     return jsonify({"status": "success"})
 
-# --- Catch-all fallback for SPA routing ---
 @app.errorhandler(404)
 def fallback(e):
     return send_from_directory(app.static_folder, "index.html")
 
-# --- Run the server ---
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8000)
