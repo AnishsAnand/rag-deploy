@@ -10,7 +10,7 @@ nltk
 pydantic
 python-dotenv
 sqlite-utils
-
+textblob
 
 fastapi
 uvicorn
