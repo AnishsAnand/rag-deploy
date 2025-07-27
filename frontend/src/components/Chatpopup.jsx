@@ -80,7 +80,6 @@ function ChatPopup() {
               <div key={idx} className={`chat-message ${msg.role}`}>
                 <div>{msg.content}</div>
                   </div>
-                )}
               </div>
             ))}
           </div>
