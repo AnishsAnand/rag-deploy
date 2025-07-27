@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import ChatPopup from "./components/ChatPopup";
+import ChatPopup from "./components/Chatpopup";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
